@@ -8,8 +8,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Project Description | Incomplete
-|Day 1| Wireframes / Priority Matrix / Timeline | Incomplete
+|Day 1| Project Description | Complete
+|Day 1| Wireframes / Priority Matrix / Timeline | Complete
 |Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Day 4| MVP & Bug Fixes | Incomplete
 |Day 5| Final Touches | Incomplete
@@ -18,7 +18,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+I am building a portfolio that will have a brief description about me, showcase the projects I have built so far, and have a contact page for people to reach me. The portfolio will be built using HTML, CSS, and JavaScript jQuery. 
 
 ## Google Sheet
 
@@ -54,14 +54,45 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 #### MVP (examples)
 
-- Pull data using google json api
-- Render data on page 
-- Allow user to choose favorites 
-- Save their choices in firebase
+Make Home Page
+
+1.	Have a clickable icon that will redirect to homepage on every html pages
+2.	Make navigation menu 
+o	Make new HTML/CSS/JS files for About
+o	Make new HTML/CSS/JS files for Projects (refer to Make Projects Page)
+o	Make new HTML/CSS/JS files for Contact Me
+o	Make the About, Projects, Contact Me text link to their own HTML pages (will open in the same window)
+3.	Make the hamburger icon for navigation menu
+o	Make it click and navigation menu drop down in mobile
+4.	Create a 1x2 CSS Grid for a 2-sentence blurb about me on the left and a picture on the left
+o	Blurb will be in flexbox
+5.	Create 2x2 CSS Grid to showcase 2 projects
+o	Create 2 flexboxes for the descriptions of the projects
+6.	Make a LinkedIn icon on the bottom right corner
+
+Make Projects Page
+
+1.	Pull projects from Google Sheet using API 
+2.	Create a flexbox for the projects display
+3.	Create child flex boxes to columnize the image preview and description of each project
+4.	Make image preview clickable, redirecting to actual project page
+5.	Make links to GitHub inside descriptions
+
+Make Contact Me Page
+1.	Make a header background 
+2.	Incorporate Google Forms onto Contact Me page below the header background
+
+Make About Me Page
+1.	Make a header background with text “About Me” and 1 sentence of me
+2.	Make a 1x2 CSS Grid with picture on the left and description on the right
+3.	Make a button icon that will redirect to blog 
+
 
 #### PostMVP 
 
-- Anything else that is not MVP
+1.	Make a carousel showing screenshot previews of projects for the Home Page
+2.	Make GitHub clickable icons in project page
+
 
 ## Functional Components
 

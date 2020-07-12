@@ -48,7 +48,7 @@ Now create a separate list starting with A and assign it one of the features.  C
 
 Once complete tally up the time and determine how long the project will take to complete. Now break those features into MVP and PostMVP so you can guarantee you will have a fully functioning project to demo. 
 
-[Time/Priority Matrix](https://res.cloudinary.com/dhiwn0i0g/image/upload/v1594594822/IMG_0095_lwlso3.jpg)
+[My Time/Priority Matrix](https://res.cloudinary.com/dhiwn0i0g/image/upload/v1594594822/IMG_0095_lwlso3.jpg)
 
 
 ### MVP/PostMVP - 5min
@@ -88,7 +88,7 @@ Make Contact Me Page
 Make About Me Page
 1.	Make a header background with text “About Me” and 1 sentence of me
 2.	Make a 1x2 CSS Grid with picture on the left and description on the right
-3.	Make a button icon that will redirect to blog 
+2.	Make a button icon that will redirect to blog
 
 
 #### PostMVP 

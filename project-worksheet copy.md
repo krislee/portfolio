@@ -92,6 +92,7 @@ Make About Me Page
 
 1.	Make a carousel showing screenshot previews of projects for the Home Page
 2.	Make GitHub clickable icons in project page
+3.      Apply animation effections, maybe use Bootstrap or just CSS
 
 
 ## Functional Components
@@ -129,8 +130,8 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Home Page Project Preview Carousel | H | 5hr | -hr | -hr|
 | Clickable Github icons on Project Page | L | 2hr | -hr | -hr|
 | Interactive Banner | M | 3hr | -hr | -hr|
-| Bootstrap | H | 4hr | -hr | -hr|
-| Total | H | 14hrs| -hrs | -hrs |
+| Bootstrap | H | 6hr | -hr | -hr|
+| Total | H | 16hrs| -hrs | -hrs |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project. 

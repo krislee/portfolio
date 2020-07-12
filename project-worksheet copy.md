@@ -28,7 +28,18 @@ Include link to your google sheet here.  Here is the sample [Suresh had used in 
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.  
 
-- [Mobile](https://git.generalassemb.ly/SEIR-629/project-1-portfolio/blob/master/readme-assets/mobile.png)
+- [Mobile](![responsive-home-page](https://user-images.githubusercontent.com/61944925/87257279-ca202000-c467-11ea-9059-551c9ee3bdfe.png)
+
+![homepage](https://user-images.githubusercontent.com/61944925/87257282-cd1b1080-c467-11ea-809f-195e9b3b4235.png)
+
+![responsive project page](https://user-images.githubusercontent.com/61944925/87257293-e1f7a400-c467-11ea-8fe3-d173f69f8054.png)
+
+![project page](https://user-images.githubusercontent.com/61944925/87257286-d906d280-c467-11ea-9ff3-0e25946aba93.png)
+
+![contact page](https://user-images.githubusercontent.com/61944925/87257301-ee7bfc80-c467-11ea-81b4-96d0bd1c250c.png)
+
+![about me](https://user-images.githubusercontent.com/61944925/87257311-02276300-c468-11ea-8233-80c5a1388b12.png))
+
 - [Tablet](https://git.generalassemb.ly/SEIR-629/project-1-portfolio/blob/master/readme-assets/nav-highlight.gif)
 - [Desktop](https://git.generalassemb.ly/SEIR-629/project-1-portfolio/blob/master/readme-assets/desktop.png)
 

@@ -58,14 +58,14 @@ Make Home Page
 
 1.	Have a clickable icon that will redirect to homepage on every html pages
 2.	Make navigation menu 
-o	Make new HTML/CSS/JS files for About
-o	Make new HTML/CSS/JS files for Projects (refer to Make Projects Page)
-o	Make new HTML/CSS/JS files for Contact Me
-o	Make the About, Projects, Contact Me text link to their own HTML pages (will open in the same window)
+* Make new HTML/CSS/JS files for About
+* Make new HTML/CSS/JS files for Projects (refer to Make Projects Page)
+* Make new HTML/CSS/JS files for Contact Me
+* Make the About, Projects, Contact Me text link to their own HTML pages (will open in the same window)
 3.	Make the hamburger icon for navigation menu
-o	Make it click and navigation menu drop down in mobile
+* Make it click and navigation menu drop down in mobile
 4.	Create a 1x2 CSS Grid for a 2-sentence blurb about me on the left and a picture on the left
-o	Blurb will be in flexbox
+* Blurb will be in flexbox
 5.	Create 2x2 CSS Grid to showcase 2 projects
 o	Create 2 flexboxes for the descriptions of the projects
 6.	Make a LinkedIn icon on the bottom right corner

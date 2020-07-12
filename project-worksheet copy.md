@@ -101,28 +101,36 @@ Based on the initial logic defined in the previous sections try and breakdown th
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
 
 #### MVP
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Hamburger | H | 1hr | 1.5hr | -hr|
-| Project Previews | H | 3hr | -hr | -hr|
-| Regular Nav | H | H | -hr | -hr|
-| Adding Form | H | 1.5hr| -hr | -hr |
-| Other sections and flex| M | 4hr | 2hr | -hr|
-| Working with API | H | 3hrs| 2hr | -hr |
-| Responsive | H | 3hr | -hr | -hr|
-| Social Media Icons | L | 1hr | -hr | -hr|
-| Total | H | 15.5hrs| -hrs | -hrs |
+| Home Page Icon | L | 1hr | -hr | -hr|
+| Regular Nav | H | 2hr | -hr | -hr|
+| Responsive Navigation | H | 3hr| -hr | -hr |
+| Home Page Header| H | 1hr | hr | -hr|
+| Responsive Home Page Header | H | 2hrs| hr | -hr |
+| Home Page Project Preview | H | 2hr | -hr | -hr|
+| Responsive Home Page Project Preview | H | 2hr | -hr | -hr|
+| Social Media Icon | L | 1hr | -hr | -hr|
+| About Me Header Page | H | 2hr | -hr | -hr|
+| About Me Page Actual Content | H | 2hr | -hr | -hr|
+| Responsive About Me Page | H | 3hr | -hr | -hr|
+| Contact Me Header Page | M | 1hr | -hr | -hr|
+| Contact Me Page Actual Content | H | 3hr | -hr | -hr|
+| Responsive Contact Me Page | H | 3hr | -hr | -hr|
+| Project Header Page | L | 1hr | -hr | -hr|
+| Google Sheet API | H | 3hr | -hr | -hr|
+| Project Page Flexbox | H | 2hr | -hr | -hr|å
+| Responsive Project Page | H | 3hr | -hr | -hr|
+| Total | H | 37hrs| -hrs | -hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Project Hover | L | 3hr | -hr | -hr|
-| Banner letters wiggle | L | 1hr | -hr | -hr|
-| Interactive Banner | M | 4hr | -hr | -hr|
-| Materialize | H | 4hr | -hr | -hr|
+| Home Page Project Preview Carousel | H | 5hr | -hr | -hr|
+| Clickable Github icons on Project Page | L | 2hr | -hr | -hr|
+| Interactive Banner | M | 3hr | -hr | -hr|
 | Bootstrap | H | 4hr | -hr | -hr|
-| Make own icon | L | 4hr | -hr | -hr|
-| Total | H | 20hrs| -hrs | -hrs |
+| Total | H | 14hrs| -hrs | -hrs |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project. 

@@ -95,7 +95,7 @@ Make About Me Page
 
 1.	Make a carousel showing screenshot previews of projects for the Home Page
 2.	Make GitHub clickable icons in project page
-3.      Apply animation effections, maybe use Bootstrap or just CSS
+3. Apply animation effections, maybe use Bootstrap or just CSS
 
 
 ## Functional Components

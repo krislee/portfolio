@@ -107,7 +107,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Regular Nav | H | 2hr | -hr | -hr|
 | Responsive Navigation | H | 3hr| -hr | -hr |
 | Home Page Header| H | 1hr | hr | -hr|
-| Responsive Home Page Header | H | 2hrs| hr | -hr |
+| Responsive Home Page Header | H | 2hr| hr | -hr |
 | Home Page Project Preview | H | 2hr | -hr | -hr|
 | Responsive Home Page Project Preview | H | 2hr | -hr | -hr|
 | Social Media Icon | L | 1hr | -hr | -hr|

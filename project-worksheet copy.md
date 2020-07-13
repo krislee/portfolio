@@ -125,6 +125,8 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Google Sheet API | H | 3hr | -hr | -hr|
 | Project Page Flexbox | H | 2hr | -hr | -hr|å
 | Responsive Project Page | H | 3hr | -hr | -hr|
+| Documentation | H | 6hr | -hr | -hr|
+| Deployment | H | 2hr | -hr | -hr|
 | Total | H | 37hrs| -hrs | -hrs |
 
 #### PostMVP

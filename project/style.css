@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&family=Cinzel&display=swap');
+/* * {
+    border: 1px solid white;
+} */
+body {
+    margin: auto;
+}
+
+/* Navigation bar */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #121318;
+    color: white;
+    height: 100px;
+    align-items: center;
+    font-family: 'Cinzel', serif;
+    border-bottom: 3px solid white;
+}
+.hp-icon {
+    margin-left: 50px;
+}
+.right-nav {
+    display: flex;
+    margin-right: 50px;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.whitelinks:link{
+    text-decoration: none;
+    color: white;
+}
+.whitelinks:visited{
+    text-decoration: none;
+    color: white;
+}
+
+.whitelinks:hover {
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.whitelinks:active {
+    color: red;
+}

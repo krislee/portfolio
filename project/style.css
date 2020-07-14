@@ -125,3 +125,38 @@ img {
     grid-area: library-description;
     width: 75%;
 }
+
+.hp-rps {
+    grid-area: rps;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.hp-rps-description {
+    grid-area: rps-description;
+    width: 75%;
+}
+
+video {
+    width: 75%;
+    box-shadow: 17px 14px 10px grey;
+    align-self: center; 
+    background-color: black;
+   /* line-height: 0; */
+   /* display: block; */
+   border: 1px solid black;
+   height: 300px;
+}
+
+.hp-library-description, .hp-rps-description {
+    display: flex;
+    align-items: center;
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 2em;
+    line-height:1;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+}

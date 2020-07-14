@@ -7,17 +7,40 @@ header {
     height: 150px;
     background-color: black;
 }
-.about {
+/* .about {
     position: absolute;
     width: 60%;
     margin-left: auto;
     margin-top: auto;
     left: 50%;
-    /* bottom: 300px; */
-    /* bottom: -500px; */
+    /* bottom: 300px; 
+    /* bottom: -500px; 
     top: 30%; 
     transform: translate(-50%, -50%);
     background-color: rgb(205, 148, 148);
+} */
+img {
+    width: 30vw;
+    display: block;
+    margin: auto;
+    border-radius: 100%;
+    border: 3px solid white;
+}
+
+#wrapper {
+    display:flex;
+}
+.filler  {
+    background-color: black;;
+    width: 200px;
+    /* width: 15%; */
+    height: 300px;
+}
+#about {
+    background-color: white;
+    width: 70%;
+    /* height: 600px; */
+    padding: 20px;
 }
 
 /* Navigation bar */

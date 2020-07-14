@@ -3,10 +3,10 @@
 body {
     margin: 0;
 }
-header {
+/* header {
     height: 150px;
     background-color: black;
-}
+} */
 /* .about {
     position: absolute;
     width: 60%;
@@ -29,13 +29,17 @@ img {
 
 #wrapper {
     display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
 }
-.filler  {
+/* .filler  {
     background-color: black;;
     width: 200px;
-    /* width: 15%; */
+    width: 15%;
     height: 300px;
-}
+} */
 #about {
     background-color: white;
     width: 70%;

@@ -1,5 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&family=Cinzel&display=swap');
+
 body {
-    margin: auto;
+    margin: 0;
+}
+header {
+    height: 150px;
+    background-color: black;
+}
+.about {
+    position: absolute;
+    width: 60%;
+    margin-left: auto;
+    margin-top: auto;
+    left: 50%;
+    /* bottom: 300px; */
+    /* bottom: -500px; */
+    /* top: 30%; 
+    transform: translate(-50%, -50%);
+    background-color: rgb(205, 148, 148);
 }
 
 /* Navigation bar */

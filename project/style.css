@@ -79,4 +79,49 @@ img {
     font-family: 'Baloo Da 2', cursive;
     font-size: 2em;
     padding-left: 70px;
+    /* text-align: center; */
+}
+
+.welcome, .aspiring, .hungry, .striving {
+    display:flex;
+    margin: 0;
+    width: 100%;
+    /* line-height: 20px; */
+}
+.welcome {
+    font-size: 2.25em;
+}
+.profile-pic {
+    /* grid-area: row start/column start/row end/column end */
+    grid-area: 1/2/2/3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Preview Projects */
+.hp-grid2 {
+    display: grid;
+    width: 100vw;
+    grid-template-areas: "library library-description"
+    "rps rps-description";
+    grid-template-rows: 400px 400px;
+    grid-template-columns: 1.75fr 1fr;
+    padding-top: 30px;
+    
+}
+.hp-library {
+    grid-area: library;
+    /* text-align: center; */
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* height: 300px; */
+}
+.hp-library-description {
+    grid-area: library-description;
+    width: 75%;
 }

@@ -47,6 +47,10 @@ nav {
     color: red;
 }
 
+.right-burger{
+    display: none;
+}
+
 /* Preview About Me */
 
 img {
@@ -139,15 +143,29 @@ img {
     width: 75%;
 }
 
-video {
+/* video {
     width: 75%;
     box-shadow: 17px 14px 10px grey;
     align-self: center; 
-    background-color: black;
+    background-color: black; */
    /* line-height: 0; */
    /* display: block; */
-   border: 1px solid black;
+   /* border: 1px solid black;
    height: 300px;
+} */
+
+video {
+    width: 60%;
+    box-shadow: 17px 14px 10px grey;
+    align-self: center; 
+    background-color: black;
+   line-height: 0;
+   display: block;
+   border: 1px solid black;
+   /* position: absolute; */
+   /* height: 90%; */
+   /* height: 100%; */
+   object-fit: cover;
 }
 
 .hp-library-description, .hp-rps-description {
@@ -159,4 +177,24 @@ video {
     flex-direction: column;
     justify-content: center;
     width: 90%;
+}
+
+h2 {
+    margin: 0;
+}
+
+.featured {
+    /* font-size: 4.5em; */
+    font-size: 72px;
+    text-align: center;
+    font-family: 'Baloo Da 2', cursive;
+    margin-bottom: 0;
+}
+/* buttons */
+.view-more {
+    padding: 15px;
+    width: 80%;
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 0.75em;
+    color: black;
 }

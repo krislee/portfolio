@@ -19,7 +19,7 @@ nav {
     /* position: fixed; */
 }
 .hp-icon {
-    margin-left: 4%;
+    margin-left: 54%;
     border-radius: 0;
     border:0;
     width: 105px;
@@ -286,6 +286,9 @@ h2 {
     .hp-library-description, .hp-rps-description {
         font-size: 1.5em;
     }
+    .hp-icon {
+        margin-left: 39%;
+    }
 }
 
 @media screen and (min-width: 800px) and (max-width:939px) {
@@ -316,6 +319,9 @@ h2 {
         width: 100%;
         /* font-size: 3.5em; */
         font-size: 65px;
+    }
+    .hp-icon {
+        margin-left: 30%;
     }
 }
 
@@ -348,6 +354,9 @@ h2 {
     .featured {
         width: 100%;
         font-size: 67px;
+    }
+    .hp-icon {
+        margin-left: 24%;
     }
 }
 

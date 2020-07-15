@@ -17,7 +17,7 @@ nav {
     margin:0;
 }
 .hp-icon {
-    margin-left: 4%;
+    margin-left: 54%;
     border-radius: 0;
     border:0;
     width: 105px;
@@ -149,6 +149,139 @@ h1 {
     font-size: 60px;
     color: black;
 }
+
+/* Footer */
+.bottom {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #111422;
+}
+/* Code below is w3Schools */
+.fa-linkedin-square {
+    background: #007bb5;
+    color: white;
+    padding: 10px;
+    font-size: 63px;
+    width: 66px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-right: 69px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-github {
+    font-size: 86px;
+    color: white;
+}
+
+/* Navigation Bar */
+@media screen and (min-width: 940px) and (max-width:1200px) {
+    .right-nav {
+        width: 40%;
+        margin-right:20px;
+    }
+    .right-burger{
+        display: none;
+    }
+    .hp-icon {
+        margin-left: 39%;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width:939px) {
+    .right-nav {
+        width: 40%;
+        margin-right:20px;
+    }
+    .right-burger{
+        display: none;
+    }
+    .hp-icon{
+        margin-left: 30%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width:799px) {
+    .right-nav {
+        width: 50%;
+        margin-right:20px;
+    }
+    .right-burger{
+        display: none;
+    }
+    .hp-icon {
+        margin-left: 24%;
+    }
+}
+/* 
+@media screen and (min-width: 600px) and (max-width:740px) {
+    .right-nav {
+        width: 55%;
+        margin-right:25px;
+    }
+    .right-burger{
+        display: none;
+    }
+} */
+
+@media screen and (max-width:599px) {
+   .burger::before {
+       content:'\2630';
+       font-size: 50px;
+       color: white;
+       float: right;
+   }
+   .right-nav {
+       margin-right: 0;
+   }
+   /* To hide the original top navigation at width less than 599px */
+   .hidden{
+       display: none;
+   }
+   /* The bottom navigation will be remain hidden until .show class is 
+   added to .right-burger through jQuery */
+   .right-burger {
+       display:none;
+   }
+   .show {
+       display: block;
+       width: 100%;
+       text-align: center;
+       font-family: 'Cinzel', serif;
+       font-size: 1.25em;
+       padding-top: 10px;
+       padding-bottom: 10px;
+       background-color: rgba(255, 255, 255, 0.708);
+   }
+
+   .bottom-nav-about, .bottom-nav-project {
+        padding-bottom: 15px;
+    }
+    .fa-linkedin-square {
+        padding: 10px;
+        font-size: 40px;
+        width: 41px;
+        border-radius: 20px;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-github {
+        font-size: 60px;
+    }
+}
+
 
 @media screen and (max-width:1350px) {
     .videoDiv{

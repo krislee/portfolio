@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kristy Lee</title>
     <script
   src="http://code.jquery.com/jquery-3.5.1.js"
   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
   crossorigin="anonymous" defer></script>
-    <title>Kristy Lee</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="app.js" defer></script>
@@ -24,10 +24,19 @@
             <div class="nav-contact hidden"><a class="whitelinks" href="contact/contact.html">Contact Me</a></div>
         </div>  
     </nav>
+      <!-- I was able to display the navigation menu BELOW the top navigation
+    with help from my peer, Kwok Ren, to put the following code OUTSIDE the 
+    <nav> which is a flex box. This way, div.right-burger will be a display 
+    block -->
+    <div class="right-burger">
+        <div class="bottom-nav-about"><a class="blacklinks" href="about-me/about-me.html">About Me</a></div>
+        <div class="bottom-nav-project"><a class="blacklinks" href="project-page/project.html">Projects</a></div>
+        <div class="bottom-nav-contact"><a class="blacklinks" href="contact/contact.html">Contact Me</a></div>
+    </div>
 
     <main>
         <div class="hp-grid">
-            <div class="profile-pic"><a class="nav-link" href="https://imgur.com/Jdb3iRu"><img src="https://i.imgur.com/Jdb3iRu.jpg" title="source: imgur.com" /></a></div>
+            <div class="profile-pic"><img src="https://i.imgur.com/Jdb3iRu.jpg" title="source: imgur.com" /></a></div>
             <div class="short-blurb"> 
                 <p class="welcome">Kristy Lee </p> 
                 <p class="aspiring">Aspiring Software-Engineer |</p> 
@@ -38,12 +47,12 @@
     </main>
 
     <main>
+        <h1 class="featured">Featured Projects</h1>
         <div class="hp-grid2">
             <div class="hp-library">
-                <video autoplay muted loop>
+                <video class="preview1" autoplay muted loop playsinline>
                     <source src="assets/library3-copy.mov" type="video/mp4">
                 </video>
-               
             </div>
             <div class="hp-library-description"> 
                 <h2> Library</h2>
@@ -51,7 +60,7 @@
                 <button class="view-more"><a class="blacklinks" href="project-page/project.html">View More Projects</a></button>
             </div>
             <div class="hp-rps">
-                <video autoplay muted loop>
+                <video class="preview2" autoplay muted loop playsinline>
                     <source src="assets/rps2-copy.mov" type="video/mp4">
                 </video>
             </div>
@@ -65,7 +74,6 @@
 
     <footer>
         <div class="bottom" >
-            <!-- <h2>Find me on</h2> -->
             <a target="_blank" href="https://www.linkedin.com/in/kristy-lee-b172051a9/" class="fa fa-linkedin-square"></a>
             <a target="_blank" href="https://github.com/krislee"><i class="fa fa-github"></i></a>
         </div>

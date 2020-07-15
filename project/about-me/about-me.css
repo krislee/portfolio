@@ -103,7 +103,6 @@ h1 {
 /* .skills-outerdiv {
     margin-top: 150px;
 } */
-
 .skills {
     width: 70%;
     margin-bottom: 0;
@@ -201,4 +200,194 @@ nav {
 
 .whitelinks:active {
     color: red;
+}
+
+@media screen and (min-width: 940px) and (max-width:1200px) {
+    .right-nav {
+        width: 40%;
+        margin-right:20px;
+    }
+    .right-burger{
+        display: none;
+    }
+    h1 {
+        width: 80%;
+        font-size: 4em;
+    }
+    img {
+        width: 25vw;
+        height: 25vw;
+    }
+
+    p {
+        width: 90%;
+    }
+    #wrapper {
+        height: 1000px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width:939px) {
+    .right-nav {
+        width: 40%;
+        margin-right:20px;
+    }
+    .right-burger{
+        display: none;
+    }
+    h1 {
+        width: 80%;
+        font-size: 4em;
+    }
+    img {
+        width: 35vw;
+        height: 35vw;
+    }
+    p {
+        width: 100%;
+    }
+    /* #wrapper {
+        height: 1000px;
+    } */
+}
+@media screen and (min-width: 600px) and (max-width:799px) {
+    .right-nav {
+        width: 50%;
+        margin-right:20px;
+        /* width: 55%;
+        margin-right:25px; */
+    }
+    .right-burger{
+        display: none;
+    }
+    #about {
+        width: 80%
+        /* padding-left: */
+    }
+    h1 {
+        width: 80%;
+        font-size: 3.5em;
+    }
+    img {
+        width: 35vw;
+        height: 35vw;
+    }
+    p {
+        width: 100%;
+        /* line-height: 1.5; */
+    }
+    /* #wrapper {
+        height: 1000px;
+    } */
+}
+
+/* @media screen and (min-width: 600px) and (max-width:740px) {
+    .right-nav {
+        width: 55%;
+        margin-right:25px;
+    }
+    .right-burger{
+        display: none;
+    }
+    img {
+        width: 35vw;
+        height: 35vw;
+    }
+    #about {
+        width: 80%
+        padding-left:
+    }
+    header {
+        height: 150px;
+    }
+    .filler {
+        width: 150px;
+    }
+} */
+
+@media screen and (max-width:599px) {
+   .burger::before {
+       content:'\2630';
+       font-size: 50px;
+       color: white;
+       float: right;
+   }
+   .right-nav {
+       margin-right: 0;
+   }
+   /* To hide the original top navigation at width less than 599px */
+   .hidden{
+       display: none;
+   }
+   /* The bottom navigation will be remain hidden until .show class is 
+   added to .right-burger through jQuery */
+   .right-burger {
+       display:none;
+   }
+   .show {
+       display: block;
+       width: 100%;
+       text-align: center;
+       font-family: 'Cinzel', serif;
+       font-size: 1.25em;
+       padding-top: 10px;
+       padding-bottom: 10px;
+       background-color: rgba(255, 255, 255, 0.708);
+   }
+
+   .bottom-nav-about, .bottom-nav-project {
+        padding-bottom: 15px;
+   }
+
+   /* Sizing the image of myself and headings in the about me and skills */
+   .profile-pic > img{
+       width: 40vw;
+       height: 40vw;
+   }
+   h1 {
+       width: 100%;
+       font-size: 3em;
+    }
+    .skills {
+        font-size: 2.5em;
+    }
+    
+    /* header {
+        height: 100px;
+    } */
+    /* .filler {
+        width: 100px;
+    } */
+
+    /* Adjusted the paragraph line height to make sure the words don't go out of the grandparent div */
+    p {
+        width: 100%;
+        line-height: 1;
+    }
+    /* Adjusted the about div to match the spaces symetrically with its parent div */
+    #about {
+        width: 60%;
+    }
+    /* Adjust the div containing the about div so that the about div won't go out of boundary of the 
+    container div */
+    #wrapper {
+        height: 1000px;
+    }
+
+    /* Resize the about me icons */
+    .fa-linkedin-square {
+        font-size: px;
+        width: 49px;
+    }
+    .fa-github {
+        font-size: 52px;
+        margin-right:25px;
+    }
+    .fa-wordpress {
+        font-size: 45px;
+        margin-right:25px;
+    }
+    .fa:hover {
+        opacity: 0.7;
+    }
 }

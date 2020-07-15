@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Contact Me</title>
+    <script
+  src="http://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <script src="contact.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="hp-icon">Icon</div>
+        <div class="right-nav">
+            <div class="div-burger">
+                <a class ="burger" href="#"></a>
+            </div>
+            <div class="nav-about hidden"><a class="whitelinks" href="../about-me/about-me.html">About Me</a></div>
+            <div class="nav-project hidden"><a class="whitelinks" href="../project-page/project.html">Projects</a></div>
+            <div class="nav-contact hidden"><a class="whitelinks" href="contact.html">Contact Me</a></div>
+        </div>  
+    </nav>
+    <!-- I was able to display the navigation menu BELOW the top navigation
+    with help from my peer, Kwok Ren, to put the following code OUTSIDE the 
+    <nav> which is a flex box. This way, div.right-burger will be a display 
+    block -->
+    <div class="right-burger">
+        <div class="bottom-nav-about"><a class="blacklinks" href="../about-me/about-me.html">About Me</a></div>
+        <div class="bottom-nav-project"><a class="blacklinks" href="../project-page/project.html">Projects</a></div>
+        <div class="bottom-nav-contact"><a class="blacklinks" href="contact.html">Contact Me</a></div>
+    </div>
+
+
+    <div class="header"><h1>Contact Me</h1></div>
+    <div class="contacts">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdQ3SWDu-K7DuFcDHgVGZXnXmUf-E3lq1qxsk61ulvLvwpDfQ/viewform?embedded=true" width="640" height="709" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+    
+</body>
+</html>

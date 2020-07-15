@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&family=Cinzel&display=swap');
+/* * {
+    border: 1px solid white;
+} */
+body {
+    margin: auto;
+}
+
+/* Navigation bar */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #121318;
+    color: white;
+    height: 100px;
+    align-items: center;
+    font-family: 'Cinzel', serif;
+    border-bottom: 3px solid white;
+}
+.hp-icon {
+    margin-left: 50px;
+}
+.right-nav {
+    display: flex;
+    margin-right: 50px;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.right-burger{
+    display: none;
+}
+
+.whitelinks:link{
+    text-decoration: none;
+    color: white;
+}
+.whitelinks:visited{
+    text-decoration: none;
+    color: white;
+}
+
+.whitelinks:hover {
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.whitelinks:active {
+    color: red;
+}
+
+.blacklinks:link{
+    text-decoration: none;
+    color: black;
+}
+.blacklinks:visited{
+    text-decoration: none;
+    color: black;
+}
+.blacklinks:hover {
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+.blacklinks:active {
+    color: red;
+}
+
+.contacts{
+    width: 100%;
+    text-align: center;
+}
+
+iframe{
+    width: 90%;
+    position: absolute;
+    top:600px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header {
+    height: 300px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    margin:0px;
+    font-size: 4em;
+    padding-top: 30px;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+
+@media screen and (min-width: 940px) and (max-width:1200px) {
+    .right-nav {
+        width: 40%;
+        margin-right:20px;
+    }
+    .right-burger{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width:939px) {
+    .right-nav {
+        width: 40%;
+        margin-right:20px;
+    }
+    .right-burger{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width:799px) {
+    .right-nav {
+        width: 50%;
+        margin-right:20px;
+    }
+    .right-burger{
+        display: none;
+    }
+}
+
+@media screen and (max-width:599px) {
+   .burger::before {
+       content:'\2630';
+       font-size: 50px;
+       color: white;
+       float: right;
+   }
+   .right-nav {
+       margin-right: 0;
+   }
+   /* To hide the original top navigation at width less than 599px */
+   .hidden{
+       display: none;
+   }
+   /* The bottom navigation will be remain hidden until .show class is 
+   added to .right-burger through jQuery */
+   .right-burger {
+       display:none;
+   }
+   .show {
+       display: block;
+       width: 100%;
+       text-align: center;
+       font-family: 'Cinzel', serif;
+       font-size: 1.25em;
+       padding-top: 10px;
+       padding-bottom: 10px;
+       background-color: rgba(255, 255, 255, 0.708);
+   }
+   .bottom-nav-about, .bottom-nav-project {
+        padding-bottom: 15px;
+   }
+    .fa-linkedin-square {
+        padding: 10px;
+        font-size: 40px;
+        width: 41px;
+        border-radius: 20px;
+    }
+    
+    .fa:hover {
+        opacity: 0.7;
+    }
+    
+    .fa-github {
+        font-size: 60px;
+    }
+}

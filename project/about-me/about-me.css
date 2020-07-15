@@ -156,6 +156,7 @@ h1 {
  }
 .icons {
      width: 10%;
+     height: 10%;
      display: block;
      margin: 20px;
 }
@@ -181,6 +182,11 @@ nav {
     margin-right: 50px;
     width: 30%;
     justify-content: space-around;
+}
+
+/* hide the bottom navigation at all other sizes except below 600px */
+.right-burger{
+    display: none;
 }
 
 .whitelinks:link{
@@ -239,9 +245,9 @@ nav {
     p {
         width: 90%;
     }
-    #wrapper {
+    /* #wrapper {
         height: 1000px;
-    }
+    } */
 }
 
 @media screen and (min-width: 800px) and (max-width:939px) {

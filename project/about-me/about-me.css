@@ -202,6 +202,23 @@ nav {
     color: red;
 }
 
+.blacklinks:link{
+    text-decoration: none;
+    color: black;
+}
+.blacklinks:visited{
+    text-decoration: none;
+    color: black;
+}
+.blacklinks:hover {
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+.blacklinks:active {
+    color: red;
+}
+
 @media screen and (min-width: 940px) and (max-width:1200px) {
     .right-nav {
         width: 40%;

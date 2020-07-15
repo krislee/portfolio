@@ -17,7 +17,10 @@ nav {
     margin:0;
 }
 .hp-icon {
-    margin-left: 50px;
+    margin-left: 4%;
+    border-radius: 0;
+    border:0;
+    width: 105px;
 }
 .right-nav {
     display: flex;

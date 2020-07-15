@@ -16,6 +16,7 @@ nav {
     align-items: center;
     font-family: 'Cinzel', serif;
     border-bottom: 3px solid white;
+    /* position: fixed; */
 }
 .hp-icon {
     margin-left: 50px;
@@ -58,6 +59,8 @@ nav {
 .blacklinks:active {
     color: red;
 }
+
+/* hide the bottom navigation at all other sizes except below 600px */
 .right-burger{
     display: none;
 }
@@ -104,7 +107,7 @@ img {
     /* line-height: 20px; */
 }
 .welcome {
-    font-size: 2.25em;
+    font-size: 75px;
 }
 .profile-pic {
     /* grid-area: row start/column start/row end/column end */
@@ -120,34 +123,50 @@ img {
     width: 100vw;
     grid-template-areas: "library library-description"
     "rps rps-description";
-    grid-template-rows: 400px 400px;
+     /* need to do fr in size in order to avoid the white space when minimizing the
+    videos because during minimizing the videos also shrink given that the video's
+    width is % */
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1.75fr 1fr;
-    padding-top: 30px;
-    
+    /* padding-top: 30px; */
 }
 .hp-library {
     grid-area: library;
     /* text-align: center; */
     width: 100%;
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
     /* height: 300px; */
+    /* align-items: flex-end; */
+    /* margin-top: 30px; */
+    /* margin-bottom: 30px; */
+    /* height: 300px; */
+    /* background-color: rgba(0, 0, 0, 0.708); */
+    /* border: 1px solid orange;
+    border-radius: 10px; */
+    height: 100%;
+    /* padding-bottom: 20px; */
+    /* position: relative;
+    overflow: hidden; */
+    
 }
 .hp-library-description {
     grid-area: library-description;
     width: 75%;
+    align-self: center;
 }
 
 .hp-rps {
     grid-area: rps;
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    height: 100%;
 }
 .hp-rps-description {
     grid-area: rps-description;
@@ -170,7 +189,7 @@ video {
     box-shadow: 17px 14px 10px grey;
     align-self: center; 
     background-color: black;
-   line-height: 0;
+   /* line-height: 0; */
    display: block;
    border: 1px solid black;
    /* position: absolute; */
@@ -352,3 +371,114 @@ h2 {
     }
 } */
 
+@media screen and (max-width:599px) {
+    .burger::before {
+        content:'\2630';
+        font-size: 50px;
+        color: white;
+        float: right;
+    }
+    .right-nav {
+        margin-right: 0;
+    }
+    /* To hide the original top navigation at width less than 599px */
+    .hidden{
+        display: none;
+    }
+    /* The bottom navigation will be remain hidden until .show class is 
+    added to .right-burger through jQuery */
+    .right-burger {
+        display:none;
+    }
+    .show {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-family: 'Cinzel', serif;
+        font-size: 1.25em;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: rgba(255, 255, 255, 0.708);
+    }
+    .bottom-nav-about, .bottom-nav-project {
+         padding-bottom: 15px;
+    }
+    img {
+        width: 40vw;
+        border-radius: 100%;
+    }
+    .short-blurb, .hp-library-description, .hp-rps-description {
+     font-size: 1.5em;
+     text-align: center;
+     padding-left: 0px;
+     margin: 0 auto;
+    }
+    .welcome {
+        /* width: 87px; */
+        width: 100%;
+        /* margin: 0 auto; */
+        text-align: center;
+        margin-top: 20px;
+        font-size: 1.75em;
+        justify-content: center;
+    }
+    .aspiring {
+        /* width: 203px; */
+        width: 100%;
+        /* margin: 0 auto; */
+        text-align: center;
+        justify-content: center;
+    }
+    .hungry {
+         /* width: 239px; */
+         width: 100%;
+         /* margin: 0 auto; */
+         text-align: center;
+         justify-content: center;
+    }
+    .hp-grid {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 600px;
+    }
+    .hp-grid2 {
+         display: flex;
+         flex-direction: column;
+         flex-wrap: wrap;
+     }
+     .hp-library-description, .hp-rps-description {
+         width: 80%;
+         justify-content: center; 
+          text-align: center;
+     }
+     .hp-grid2 {
+         padding-top:0px;
+     }
+     .hp-library, .hp-rps-description {
+         margin-bottom: 20px;
+     }
+     .view-more {
+         padding: 10px;
+         width: 60%;
+         font-size: 1em;
+     }
+     .fa-linkedin-square {
+         padding: 10px;
+         font-size: 40px;
+         width: 41px;
+         border-radius: 20px;
+     }
+     .fa:hover {
+         opacity: 0.7;
+     }
+     .fa-github {
+         font-size: 60px;
+     }
+     .featured {
+         font-size: 3em;
+         margin-bottom: 20px;
+     }
+}

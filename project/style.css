@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&family=Cinzel&display=swap');
-/* * {
-    border: 1px solid white;
-} */
+
 body {
     margin: auto;
 }
 
 /* Navigation bar */
+
 nav {
     width: 100%;
     display: flex;
@@ -27,7 +26,6 @@ nav {
     width: 30%;
     justify-content: space-around;
 }
-
 .whitelinks:link{
     text-decoration: none;
     color: white;
@@ -36,17 +34,30 @@ nav {
     text-decoration: none;
     color: white;
 }
-
 .whitelinks:hover {
     color: red;
     text-decoration: underline;
     text-decoration-color: white;
 }
-
 .whitelinks:active {
     color: red;
 }
-
+.blacklinks:link{
+    text-decoration: none;
+    color: black;
+}
+.blacklinks:visited{
+    text-decoration: none;
+    color: black;
+}
+.blacklinks:hover {
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+.blacklinks:active {
+    color: red;
+}
 .right-burger{
     display: none;
 }
@@ -190,11 +201,45 @@ h2 {
     font-family: 'Baloo Da 2', cursive;
     margin-bottom: 0;
 }
-/* buttons */
+/* View More Projects Button */
 .view-more {
     padding: 15px;
     width: 80%;
     font-family: 'Baloo Da 2', cursive;
     font-size: 0.75em;
     color: black;
+}
+
+/* Footer */
+.bottom {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #111422;
+}
+
+/* Code below is w3Schools */
+.fa-linkedin-square {
+    background: #007bb5;
+    color: white;
+    padding: 10px;
+    font-size: 63px;
+    width: 66px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-right: 69px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-github {
+    font-size: 86px;
+    color: white;
 }

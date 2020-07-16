@@ -21,12 +21,7 @@ body {
     background-color: rgb(205, 148, 148);
 } */
 .profile-pic > img {
-    width: 25vw;
-    height: 23vw;
-    display: block;
-    margin: auto;
-    border-radius: 100%;
-    border: 3px solid black;
+    display:none
 }
 
 #wrapper {
@@ -45,15 +40,30 @@ body {
     width: 15%;
     height: 300px;
 } */
-#about {
+.about {
     width: 70%;
     /* height: 600px; */
     padding: 20px;
     margin-top: 10px;
-    background-color: rgba(255, 255, 255, 0.708);
+    background-color: rgba(255, 255, 255,0);
     color: black;
+    transform: translate(0px,400px);
+    /* opacity: 0; */
+}
+#slide-up {
+    transform: translate(0px,0px);
+    transition: all 1s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.708);
 }
 
+#profile-appear {
+    width: 25vw;
+    height: 23vw;
+    display: block;
+    margin: auto;
+    border-radius: 100%;
+    border: 3px solid black;
+}
 /*.about {
     position: absolute;
     width: 60%;
@@ -302,7 +312,7 @@ nav {
     .right-burger{
         display: none;
     }
-    #about {
+    .about {
         width: 80%
         /* padding-left: */
     }
@@ -403,7 +413,7 @@ nav {
         line-height: 1;
     }
     /* Adjusted the about div to match the spaces symetrically with its parent div */
-    #about {
+    .about {
         width: 60%;
     }
     /* Adjust the div containing the about div so that the about div won't go out of boundary of the 

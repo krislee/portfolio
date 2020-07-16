@@ -14,11 +14,15 @@ const slideUp = () => {
     let options = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.1
+        threshold: 0.0
     }
-    
-    if (document.querySelector('body').offsetWidth < '600px'){
-        options.threshold = 0.5
+    let bodyWidth = document.querySelector('body').offsetWidth
+    if (bodyWidth< 600 && bodyWidth>500){
+        options.threshold = 0.1
+    } else if (bodyWidth <=500 && bodyWidth >400) {
+        options.threshold = 0.2
+    } else if (bodyWidth <500 && bodyWidth >400) {
+        options.threshold = 0.4
     }
     let observer = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry) => {

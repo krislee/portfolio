@@ -14,7 +14,7 @@ const slideUp = () => {
     let options = {
         root: null,
         rootMargin: '0px',
-        threshold: 0
+        threshold: 0.1
     }
     
     let observer = new IntersectionObserver((entries, observer) => {
@@ -65,7 +65,6 @@ slideUp2()
 $(window).scroll(function() {
     if ($(this).scrollTop() > 800) {
       $('.about').fadeOut();
-    //   $('.skills-outerdiv').fadeIn();
     } else {
       $('.about').fadeIn();
     //   $('.skills-outerdiv').fadeOut();

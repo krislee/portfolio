@@ -189,13 +189,7 @@ nav {
     font-family: 'Cinzel', serif;
     border-bottom: 3px solid white;
 }
-.hp-icon {
-    /* margin-left: 54%; */
-    margin-left: 2em;
-    border-radius: 0;
-    border:0;
-    width: 105px;
-}
+
 .right-nav {
     display: flex;
     margin-right: 50px;

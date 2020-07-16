@@ -124,8 +124,8 @@ h1 {
     .right-burger{
         display: none;
     }
-    .hp-icon {
-        /* margin-left: 39%; */
+    .icondiv {
+        margin-left: 4%;
     }
 }
 
@@ -137,8 +137,8 @@ h1 {
     .right-burger{
         display: none;
     }
-    .hp-icon {
-        /* margin-left: 30%; */
+    .icondiv {
+        margin-left: 4%;
     }
 }
 
@@ -150,8 +150,8 @@ h1 {
     .right-burger{
         display: none;
     }
-    .hp-icon {
-        /* margin-left: 24%; */
+    .icondiv {
+        margin-left: 4%;
     }
 }
 
@@ -187,6 +187,9 @@ h1 {
    .bottom-nav-about, .bottom-nav-project {
         padding-bottom: 15px;
    }
+   .icondiv {
+    margin-left: 10%;
+}
     .fa-linkedin-square {
         padding: 10px;
         font-size: 40px;

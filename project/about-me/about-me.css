@@ -161,6 +161,21 @@ h1 {
      margin: 20px;
 }
 
+.copyright {
+    font-family: 'Baloo Da 2', cursive;
+    text-align:center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #111422;
+    color:white;
+}
+
+.copyright-para {
+    margin-top:0;
+}
 
 /* Navigation bar */
 nav {

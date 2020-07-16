@@ -281,6 +281,10 @@ h2 {
     color: white;
 }
 
+.copyright {
+    font-family: 'Baloo Da 2', cursive;
+    text-align:center;
+}
 
 @media screen and (min-width: 940px) and (max-width:1200px) {
     .short-blurb {

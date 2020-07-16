@@ -145,11 +145,11 @@ h1 {
 .fa:hover {
     opacity: 0.7;
 }
-
-.fa-github {
-    font-size: 60px;
+.flex > div> .paraContainer > .icons > a > .fa-github{
+    /* background-color: #111422; */
     color: black;
 }
+
 
 /* Footer */
 .bottom {
@@ -178,10 +178,14 @@ h1 {
 .fa:hover {
     opacity: 0.7;
 }
-
 .fa-github {
     font-size: 86px;
     color: white;
+}
+
+.copyright {
+    font-family: 'Baloo Da 2', cursive;
+    text-align:center;
 }
 
 /* Navigation Bar */
@@ -388,6 +392,11 @@ h1 {
     } */
     .flex > div:nth-child(2) >.videoDiv > .video, .flex > div:nth-child(4) >.videoDiv > .video {
         box-shadow: 0px 0px 0px grey;
+    }
+
+    .flex > div:nth-child(even)> .paraContainer > .icons > a > .fa-github{
+        /* background-color: #111422; */
+        color: white;
     }
 }
 

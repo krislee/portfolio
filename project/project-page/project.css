@@ -17,7 +17,8 @@ nav {
     margin:0;
 }
 .hp-icon {
-    margin-left: 54%;
+    /* margin-left: 54%; */
+    margin-left: 2em;
     border-radius: 0;
     border:0;
     width: 105px;
@@ -193,7 +194,7 @@ h1 {
         display: none;
     }
     .hp-icon {
-        margin-left: 39%;
+        /* margin-left: 39%; */
     }
 }
 
@@ -206,7 +207,7 @@ h1 {
         display: none;
     }
     .hp-icon{
-        margin-left: 30%;
+        /* margin-left: 30%; */
     }
 }
 
@@ -219,7 +220,8 @@ h1 {
         display: none;
     }
     .hp-icon {
-        margin-left: 24%;
+        /* margin-left: 24%; */
+  
     }
 }
 /* 

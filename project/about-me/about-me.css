@@ -22,7 +22,7 @@ body {
 } */
 .profile-pic > img {
     width: 25vw;
-    height: 25vw;
+    height: 23vw;
     display: block;
     margin: auto;
     border-radius: 100%;
@@ -104,7 +104,7 @@ h1 {
     margin-top: 150px;
 } */
 .skills {
-    width: 70%;
+    /* width: 70%; */
     margin-bottom: 0;
     margin-top: 0;
 }
@@ -175,7 +175,8 @@ nav {
     border-bottom: 3px solid white;
 }
 .hp-icon {
-    margin-left: 54%;
+    /* margin-left: 54%; */
+    margin-left: 2em;
     border-radius: 0;
     border:0;
     width: 105px;
@@ -252,7 +253,7 @@ nav {
         height: 1000px;
     } */
     .hp-icon {
-        margin-left: 39%;
+        /* margin-left: 39%; */
     }
 }
 
@@ -279,7 +280,7 @@ nav {
         height: 1000px;
     } */
     .hp-icon {
-        margin-left: 30%;
+        /* margin-left: 30%; */
     }
 }
 @media screen and (min-width: 600px) and (max-width:799px) {
@@ -312,7 +313,7 @@ nav {
         height: 1000px;
     } */
     .hp-icon {
-        margin-left: 24%;
+        /* margin-left: 24%; */
     }
 }
 

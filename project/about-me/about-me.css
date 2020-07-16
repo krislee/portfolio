@@ -208,6 +208,13 @@ nav {
     display: none;
 }
 
+.hp-icon {
+    width: 105px;
+}
+.icondiv {
+    margin-left: 5%;
+}
+
 .whitelinks:link{
     text-decoration: none;
     color: white;
@@ -260,15 +267,11 @@ nav {
         width: 25vw;
         height: 25vw;
     }
-
     p {
         width: 90%;
     }
-    /* #wrapper {
-        height: 1000px;
-    } */
-    .hp-icon {
-        /* margin-left: 39%; */
+    .icondiv {
+        margin-left: 4%;
     }
 }
 
@@ -291,11 +294,8 @@ nav {
     p {
         width: 100%;
     }
-    /* #wrapper {
-        height: 1000px;
-    } */
-    .hp-icon {
-        /* margin-left: 30%; */
+    .icondiv {
+        margin-left: 4%;
     }
 }
 @media screen and (min-width: 600px) and (max-width:799px) {
@@ -324,11 +324,8 @@ nav {
         width: 100%;
         /* line-height: 1.5; */
     }
-    /* #wrapper {
-        height: 1000px;
-    } */
-    .hp-icon {
-        /* margin-left: 24%; */
+    .icondiv {
+        margin-left: 4%;
     }
 }
 
@@ -385,6 +382,9 @@ nav {
        padding-bottom: 10px;
        background-color: rgba(255, 255, 255, 0.708);
    }
+   .icondiv {
+        margin-left: 10%;
+    }
 
    .bottom-nav-about, .bottom-nav-project {
         padding-bottom: 15px;
@@ -402,13 +402,6 @@ nav {
     .skills {
         font-size: 2.5em;
     }
-    
-    /* header {
-        height: 100px;
-    } */
-    /* .filler {
-        width: 100px;
-    } */
 
     /* Adjusted the paragraph line height to make sure the words don't go out of the grandparent div */
     p {

@@ -17,11 +17,10 @@ nav {
     margin:0;
 }
 .hp-icon {
-    /* margin-left: 54%; */
-    margin-left: 2em;
-    border-radius: 0;
-    border:0;
     width: 105px;
+}
+.icondiv {
+    margin-left: 5%;
 }
 .right-nav {
     display: flex;
@@ -197,8 +196,8 @@ h1 {
     .right-burger{
         display: none;
     }
-    .hp-icon {
-        /* margin-left: 39%; */
+    .icondiv {
+        margin-left: 4%;
     }
 }
 
@@ -210,8 +209,8 @@ h1 {
     .right-burger{
         display: none;
     }
-    .hp-icon{
-        /* margin-left: 30%; */
+    .icondiv {
+        margin-left: 4%;
     }
 }
 
@@ -223,9 +222,8 @@ h1 {
     .right-burger{
         display: none;
     }
-    .hp-icon {
-        /* margin-left: 24%; */
-  
+    .icondiv {
+        margin-left: 4%;
     }
 }
 /* 
@@ -271,6 +269,9 @@ h1 {
 
    .bottom-nav-about, .bottom-nav-project {
         padding-bottom: 15px;
+    }
+    .icondiv {
+        margin-left: 10%;
     }
     .fa-linkedin-square {
         padding: 10px;

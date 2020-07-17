@@ -533,7 +533,7 @@ h1 {
     .flex > div:nth-child(5) > .icons {
         margin-top: 50px;
     }
-    .flex > div:nth-child(even) > .icons > button {
+    .flex > div:nth-child(even) > .icons > button > a {
         color: black;
     }
 }

@@ -12,4 +12,15 @@ $(window).resize (function(e) {
 
 $(window).on('load', () => {
     $('.short-blurb').css('opacity', '1')
+    $('.profile-pic').css('opacity', '1')
+})
+
+$('.preview1').hover(() => {
+    $('.library').toggleClass('text-glow')
+    $('.glow1').toggleClass('button-glow')
+
+})
+$('.preview2').hover(() => {
+    $('.rps').toggleClass('text-glow')
+    $('.glow2').toggleClass('button-glow')
 })

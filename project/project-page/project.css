@@ -464,7 +464,7 @@ h1 {
         color: white;
     }
     .flex > div:nth-child(2) >.videoDiv > .video, .flex > div:nth-child(4) >.videoDiv > .video {
-        border: 10px solid #cccccc;
+        border: 3px solid #cccccc;
     }
     /* .flex > div:nth-child(4) >.videoDiv > .video {
         box-shadow: -15px -10px 8px grey;
@@ -498,6 +498,21 @@ h1 {
         padding-top: 100px;
         /* height: 150px; */
     }
+    .flex > div:nth-child(3) > .icons {
+        margin-top: 50px;
+    }
+    .flex > div:nth-child(5) > .icons {
+        margin-top: 50px;
+    }
+    .flex > div:nth-child(2) > .icons {
+        margin-top: 40px;
+    }
+    .flex > div:nth-child(3) > .icons {
+        margin-top: 40px;
+    }
+    .flex > div:nth-child(5) > .icons {
+        margin-top: 40px;
+    }
 }
 @media screen and (max-width: 450px) {
     .videoDiv{
@@ -512,4 +527,15 @@ h1 {
     .paraContainer > p:nth-child(even) {
         height: 125px;
     }
+    .flex > div:nth-child(3) > .icons {
+        margin-top: 50px;
+    }
+    .flex > div:nth-child(5) > .icons {
+        margin-top: 50px;
+    }
+    .flex > div:nth-child(even) > .icons > button {
+        color: black;
+    }
 }
+
+/* @media screen and (max-width: 450px) and (min-width: ) */

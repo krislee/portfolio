@@ -161,20 +161,23 @@ h1 {
 .bottom {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-    padding: 30px;
-    margin-top: 30px;
+    padding: 20px;
+    margin-top: 80px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #111422;
 }
+
 /* Code below is w3Schools */
 .fa-linkedin-square {
-    background: #007bb5;
+    /* background: #007bb5; */
     color: white;
-    padding: 10px;
-    font-size: 63px;
-    width: 66px;
+    /* padding: 5px; */
+    font-size: 80px;
+    width: 56px;
+    /* height: 56px; */
     text-align: center;
     text-decoration: none;
     border-radius: 20px;
@@ -184,6 +187,7 @@ h1 {
 .fa:hover {
     opacity: 0.7;
 }
+
 .fa-github {
     font-size: 86px;
     color: white;
@@ -219,6 +223,15 @@ h1 {
     .icondiv {
         margin-left: 4%;
     }
+    .fa-linkedin-square {
+        font-size: 60px;
+    }
+    .fa-github {
+        font-size: 70px;
+    }
+    .bottom {
+        padding: 15px;
+    }
 }
 
 @media screen and (min-width: 600px) and (max-width:799px) {
@@ -231,6 +244,15 @@ h1 {
     }
     .icondiv {
         margin-left: 4%;
+    }
+    .fa-linkedin-square {
+        font-size: 60px;
+    }
+    .fa-github {
+        font-size: 70px;
+    }
+    .bottom {
+        padding: 15px;
     }
 }
 /* 
@@ -280,17 +302,15 @@ h1 {
     .icondiv {
         margin-left: 10%;
     }
-    .fa-linkedin-square {
+    .bottom {
         padding: 10px;
-        font-size: 40px;
-        width: 41px;
+        margin-top:50px;
+    }
+    .fa-linkedin-square {
+        font-size: 55px;
+        width: 55px;
         border-radius: 20px;
     }
-
-    .fa:hover {
-        opacity: 0.7;
-    }
-
     .fa-github {
         font-size: 60px;
     }

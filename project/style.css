@@ -117,6 +117,8 @@ nav {
     font-size: 2em;
     /* padding-left: 70px; */
     /* text-align: center; */
+    opacity: 0;
+    transition: all 2s ease-in-out;
 }
 
 .welcome, .aspiring, .hungry, .striving {
@@ -155,45 +157,7 @@ nav {
     overflow: hidden;
     width: 100%;
 } */
-.changewords{
-    display: inline;
-    /* position: relative; */
-}
-.changewords span {
-    text-indent: 7px;
-    word-wrap: break-word;
-    white-space: nowrap;
-    position: absolute;
-    opacity: 0;
-    overflow: hidden;
-    color: #fafafa;
-}
 
-.changewords span {
-    animation: rotateWords 9s linear infinite 0s;
-}
-
-.changewords span:nth-child(2) {
-    animation-delay: 3s;
-}
-.changewords span:nth-child(3) {
-    animation-delay: 6s;
-} 
-@keyframes rotateWords {
-    0% {opacity: 1; animation-timing-function: ease-in-out; width:0px;}
-    10% {opacity: 0.4;}
-    20% {opacity: 0.6;}
-    27% {opacity: 1;}
-    100% {opacity: 0;}
-}
-
-/* @keyframes rotateWords2 {
-    0% {opacity: 1; animation-timing-function: ease-in-out; height:0px;}
-    25% {opacity: 0.75; height: 60px;}
-    50% {opacity: 1; height: 60px;}
-    75% {opacity: 0; height: 60px;}
-    100% {opacity: 0;}
-} */
 
 /* Preview Projects */
 .hp-grid2 {

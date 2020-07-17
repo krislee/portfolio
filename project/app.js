@@ -10,22 +10,6 @@ $(window).resize (function(e) {
    }
 })
 
-// const changeText = () => {
-//     count = 0;
-//     wordsArray = ["learn", "be curious", "make a positive impact"]
-//     setInterval(() => {
-//         count ++;
-//         $('.changeword')
-//             $('.changeword').text(wordsArray[count%wordsArray.length])
-//         })
-//     }, 2000)
-// }
-// changeText()
-
-const breakWord = () => {
-    let bodyWidth = document.querySelector('body').offsetWidth
-    if (bodyWidth< 599){
-        $('.hungry span').append('<br>')
-    }
-}
-breakWord()
+$(window).on('load', () => {
+    $('.short-blurb').css('opacity', '1')
+})

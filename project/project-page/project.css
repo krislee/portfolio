@@ -170,13 +170,13 @@ h1 {
     font-size: 25px;
 }
 
-.launch > a {
+/* .launch > a {
     text-decoration: none;
     color: white;
-}
+} */
 .launch > a:link{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 .launch > a:visited{
     text-decoration: none;

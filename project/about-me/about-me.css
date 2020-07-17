@@ -140,6 +140,7 @@ h1 {
     justify-content: center;
     align-items: center;
     background-color: #111422;
+    width: 100%;
 }
 
 /* Code below is w3Schools */
@@ -164,7 +165,15 @@ h1 {
 .copyright {
     font-family: 'Baloo Da 2', cursive;
     text-align:center;
+    /* display:flex;
+    align-items: center;
+    justify-content: center; */
 }
+/* .copyright > p {
+    margin-top: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+} */
 
 /* Navigation bar */
 nav {

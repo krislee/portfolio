@@ -169,11 +169,10 @@ h1 {
     align-items: center;
     justify-content: center; */
 }
-/* .copyright > p {
-    margin-top: 30px;
-    width: 100%;
-    margin-bottom: 30px;
-} */
+.copy {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
 
 /* Navigation bar */
 nav {

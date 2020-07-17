@@ -79,24 +79,3 @@ slideUp2()
 //   });
 
 
-const opacityChange = () => {
-let options = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.
-}
-
-let observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
-        console.log(entry)
-        if (entry.isIntersecting) {
-            document.querySelector('.skills-outerdiv').setAttribute('id', 'slide-up-skills')
-            document.querySelectorAll('.flex-icon')[0].setAttribute('id', 'icons-appear')
-            document.querySelectorAll('.flex-icon')[1].setAttribute('id', 'icons-appear')
-        }
-    })
-}, options)
-let about = document.querySelector('.skills-outerdiv')
-observer.observe(about)
-}
-slideUp2()

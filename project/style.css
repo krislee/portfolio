@@ -128,13 +128,71 @@ nav {
 .welcome {
     font-size: 75px;
 }
-.profile-pic {
-    /* grid-area: row start/column start/row end/column end */
-    /* grid-area: 1/2/2/3;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; */
+
+/* .welcome {
+    animation: name 3s linear 2s 2 alternate-reverse
 }
+
+@keyframes name {
+    0% {opacity:0.2}
+    25% {opacity: 0.4}
+    50% {opacity:0.6}
+    75% {opacity: 0.8}
+    100% {opacity: 1}
+} */
+
+/* .hungry{
+    display: inline;
+    text-indent: 7px;
+}
+
+.hungry > span{
+    word-wrap: break-word;
+    white-space: nowrap;
+    color: rgb(217, 240, 17);
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    width: 100%;
+} */
+.changewords{
+    display: inline;
+    position: relative;
+}
+.changewords span {
+    display: inline;
+    /* text-indent: 7px; */
+    word-wrap: break-word;
+    white-space: nowrap;
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.change2 span {
+    animation: rotateWords 9s linear infinite 0s;
+}
+.changewords span:nth-child(2) {
+    animation-delay: 3s;
+}
+.changewords span:nth-child(3) {
+    animation-delay: 6s;
+} 
+@keyframes rotateWords {
+    0% {opacity: 1; animation-timing-function: ease-in; width:0px;}
+    25% {opacity: 0.75; width: 0px;}
+    50% {opacity: 1; }
+    75% {opacity: 0; }
+    100% {opacity: 0;}
+}
+
+/* @keyframes rotateWords2 {
+    0% {opacity: 1; animation-timing-function: ease-in-out; height:0px;}
+    25% {opacity: 0.75; height: 60px;}
+    50% {opacity: 1; height: 60px;}
+    75% {opacity: 0; height: 60px;}
+    100% {opacity: 0;}
+} */
 
 /* Preview Projects */
 .hp-grid2 {
@@ -288,13 +346,6 @@ h2 {
 }
 
 @media screen and (min-width: 940px) and (max-width:1200px) {
-    .short-blurb {
-        /* font-size: 2em; */
-        /* padding-left:60px; */
-    }
-    /* img {
-        width: 25vw;
-    } */
     .right-nav {
         width: 40%;
         margin-right:20px;
@@ -391,7 +442,7 @@ h2 {
     }
 }
 
-@media screen and (max-width:650px) {
+/*(@media screen and (max-width:650px) {
     .short-blurb {
         font-size: 1.35em;
     }
@@ -522,4 +573,6 @@ h2 {
          font-size: 40px;
          margin-bottom: 20px;
      }
+
+    
 }

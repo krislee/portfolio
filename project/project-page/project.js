@@ -46,12 +46,6 @@ fetch(url)
     d.observe(projectDiv4) 
     e.observe(projectDiv5)
 
-    // let y = opacityChange2()
-    // y.observe(projectDiv3)
-    // y.observe(projectDiv4) 
-
-    // let z = opacityChange3()
-    // z.observe(projectDiv5)
 })
 
 const opacityChange = (num) => {
@@ -63,7 +57,7 @@ const opacityChange = (num) => {
 
     let observer = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry) => {
-            console.log(entry)
+            // console.log(entry)
             if (entry.isIntersecting) {
                 document.querySelectorAll('.container')[num].setAttribute('id', 'projects-opacity')
             }

@@ -467,6 +467,12 @@ h2 {
         color: white;
         float: right;
     }
+    .xcross::before {
+        content:'\2715';
+        font-size: 50px;
+        color: white;
+        float: right;
+    }
     .right-nav {
         margin-right: 0;
     }

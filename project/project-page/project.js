@@ -16,13 +16,14 @@ const url = 'https://spreadsheets.google.com/feeds/list/1TfxvlFob_O3oOgSFAW-pfBB
 fetch(url)
 .then(response => response.json())
 .then(retrievedData => {
-    //console.log(retrievedData)
+    console.log(retrievedData)
     const arr = retrievedData.feed.entry.map(eachentry => {
         return {
             description: eachentry.gsx$description.$t,
             image: eachentry.gsx$image.$t,
             title: eachentry.gsx$title.$t,
-            url: eachentry.gsx$url.$t
+            url: eachentry.gsx$url.$t,
+            launch: eachentry.gsx$launch.$t
         }
     })
     console.log(arr)
@@ -66,46 +67,6 @@ const opacityChange = (num) => {
    return observer
 }
 
-// const opacityChange2 = () => {
-//     let options = {
-//         root: null,
-//         rootMargin: '0px',
-//         threshold:0.8
-//     }
-
-//     let observer = new IntersectionObserver((entries, observer) => {
-//         entries.forEach((entry) => {
-//             console.log(entry)
-//             if (entry.isIntersecting) {
-//                 document.querySelectorAll('.container')[2].setAttribute('id', 'projects-opacity')
-//                 document.querySelectorAll('.container')[3].setAttribute('id', 'projects-opacity')
-//             }
-//         })
-//     }, options)
-//    return observer
-// }
-
-// const opacityChange3 = () => {
-//     let options = {
-//         root: null,
-//         rootMargin: '0px',
-//         threshold:0.8
-//     }
-
-//     let observer = new IntersectionObserver((entries, observer) => {
-//         entries.forEach((entry) => {
-//             console.log(entry)
-//             if (entry.isIntersecting) {
-//                 document.querySelectorAll('.container')[4].setAttribute('id', 'projects-opacity')
-//             }
-//         })
-//     }, options)
-//    return observer
-// }
-
-
-
-
 const create  = (array) => {
     array.forEach ((eachArrayElement) => {
         const $div = $("<div>").addClass("container")
@@ -119,16 +80,18 @@ const create  = (array) => {
         $div2.append($("<p>").addClass("para").text(eachArrayElement.description))
 
         const $a = $("<a>").attr({target: "_blank", href: eachArrayElement.url}).append($("<i>").addClass("fa fa-github"))
-        $div2.append($("<div>").addClass("icons").append($a))
-        
+        // const $launchlink = $('<a>').attr('href', eachArrayElement.launch)
+        const $button = $('<button>').addClass('launch').append($('<a>').attr('href', eachArrayElement.launch).text("Launch Project"))
+
+        // $launchlink.append($button)
+        // $div2.append($("<div>").addClass("icons").append($a).append($button))
+       
+
         $div.append($divVideo)
         $div.append($div2)
+        $div.append($("<div>").addClass("icons").append($a).append($button))
         $(".flex").append($div)
     
     })
 }
 
-document.querySelectorAll('.container')[1].setAttribute('id', 'projects-opacity')
-document.querySelectorAll('.container')[2].setAttribute('id', 'projects-opacity')
-document.querySelectorAll('.container')[3].setAttribute('id', 'projects-opacity')
-document.querySelectorAll('.container')[4].setAttribute('id', 'projects-opacity')

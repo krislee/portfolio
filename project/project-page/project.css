@@ -113,13 +113,13 @@ main {
 
 .paraContainer {
     padding-top: 100px;
-    height: 200px;
+    /* height: 200px; */
     width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 
@@ -127,7 +127,7 @@ main {
     width: 90%;
     margin: 0 auto;
     font-family: 'Baloo Da 2', cursive;
-    height: 150px;
+    height: 100px;
     text-align: left;
 }
 h1 {
@@ -147,13 +147,48 @@ h1 {
 .icons {
     width: 100%;
     margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .fa:hover {
     opacity: 0.7;
 }
-.flex > div> .paraContainer > .icons > a > .fa-github{
+.flex > div> .icons > a > .fa-github{
     /* background-color: #111422; */
     color: black;
+}
+
+.launch {
+    padding: 10px;
+    /* height: 70%; */
+    display: flex;
+    align-items: baseline;
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 25px;
+}
+
+.launch > a {
+    text-decoration: none;
+    color: white;
+}
+.launch > a:link{
+    text-decoration: none;
+    color: white;
+}
+.launch > a:visited{
+    text-decoration: none;
+    color: black;
+}
+.launch > a:hover {
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+.launch > a:active {
+    color: red;
 }
 
 
@@ -232,6 +267,10 @@ h1 {
     .bottom {
         padding: 15px;
     }
+
+    .launch{
+        font-size: 20px;
+    }
 }
 
 @media screen and (min-width: 600px) and (max-width:799px) {
@@ -253,6 +292,9 @@ h1 {
     }
     .bottom {
         padding: 15px;
+    }
+    .launch{
+        font-size: 15px;
     }
 }
 /* 
@@ -302,6 +344,9 @@ h1 {
     .icondiv {
         margin-left: 10%;
     }
+    .para {
+        height: 50px;
+    }
     .bottom {
         padding: 10px;
         margin-top:50px;
@@ -313,6 +358,9 @@ h1 {
     }
     .fa-github {
         font-size: 60px;
+    }
+    .launch{
+        font-size: 15px;
     }
 }
 
@@ -395,7 +443,9 @@ h1 {
     }
     .paraContainer {
         padding-top: 200px;
-        height: 150px;
+    }
+    .icons {
+        margin-bottom: 40px;
     }
     .flex{
         flex-direction: column;
@@ -403,10 +453,6 @@ h1 {
     .container {
         width: 100%;
     }
-    
-    /* .flex > div:nth-child(4) {
-        background-color: white;
-    } */
     .flex > div:nth-child(2), .flex > div:nth-child(4) {
         background-color: #111422;
         color: white;
@@ -422,16 +468,11 @@ h1 {
         box-shadow: 0px 0px 0px grey;
     }
 
-    .flex > div:nth-child(even)> .paraContainer > .icons > a > .fa-github{
+    .flex > div:nth-child(even) > .icons > a > .fa-github{
         /* background-color: #111422; */
         color: white;
     }
 }
-
-    /* .flex > div:nth-child(5) >.videoDiv > .video {
-        box-shadow: 0px 0px 0px grey;
-    }
-} */
 
 @media screen and (max-width: 650px) {
     .videoDiv{
@@ -439,7 +480,7 @@ h1 {
     }
     .paraContainer {
         padding-top: 150px;
-        height: 150px;
+        /* height: 150px; */
     }
 }
 
@@ -449,7 +490,7 @@ h1 {
     }
     .paraContainer {
         padding-top: 100px;
-        height: 150px;
+        /* height: 150px; */
     }
 }
 @media screen and (max-width: 450px) {
@@ -458,6 +499,11 @@ h1 {
     }
     .paraContainer {
         padding-top: 0px;
-        
     } 
+    .flex > div:nth-child(odd) > .paraContainer >p {
+        height: 75px;
+    }
+    .paraContainer > p:nth-child(even) {
+        height: 125px;
+    }
 }

@@ -82,24 +82,8 @@ nav {
     border-radius: 100%;
     border: 3px solid white;
 } */
-.profile-pic {
-    width: 30%;
-    border-radius: 100%;
-    border: 3px solid white;
-    opacity: 0;
-    transition: all 1s ease-in-out;
-}
+
 .hp-grid {
-    /* border: 1px solid black; */
-    /* width: 100vw; */
-    /* display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1.75fr 1fr;
-    background-color: #111422;
-    color: white;
-    padding-top: 40px;
-    padding-bottom: 40px; */
-    /* May take the height out */
     background-color: #111422;
     color: white;
     height: 650px;
@@ -108,7 +92,18 @@ nav {
     justify-content: space-around;
     align-items: center;
 }
-
+.profile-pic {
+    width: 30%;
+    border-radius: 100%;
+    border: 3px solid white;
+    opacity: 0;
+    transition: all 2s ease-in-out;
+    transform: translate(0px, 300px);
+}
+.profile-pic-effect {
+    opacity:1;
+    transform: translate(0px, 0px);
+}
 .short-blurb {
     /* grid-area: 1/1/2/2; */
     display: flex;
@@ -120,7 +115,12 @@ nav {
     /* padding-left: 70px; */
     /* text-align: center; */
     opacity: 0;
-    transition: all 5s ease-in-out;
+    transition: all 2.5s ease-in-out;
+    transform: translate(0px, 300px);
+}
+.short-blurb-effect {
+    opacity:1;
+    transform: translate(0px, 0px);
 }
 
 .welcome, .aspiring, .hungry, .striving {

@@ -11,8 +11,8 @@ $(window).resize (function(e) {
 })
 
 $(window).on('load', () => {
-    $('.short-blurb').css('opacity', '1')
-    $('.profile-pic').css('opacity', '1')
+    $('.short-blurb').addClass('short-blurb-effect')
+    $('.profile-pic').addClass('profile-pic-effect')
 })
 
 $('.preview1').hover(() => {

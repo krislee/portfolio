@@ -82,13 +82,8 @@ const create  = (array) => {
         $div2.append($("<p>").addClass("para").text(eachArrayElement.description))
 
         const $a = $("<a>").attr({target: "_blank", href: eachArrayElement.url}).append($("<i>").addClass("fa fa-github"))
-        // const $launchlink = $('<a>').attr('href', eachArrayElement.launch)
         const $button = $('<button>').addClass('launch').append($('<a>').attr('href', eachArrayElement.launch).text("Launch Project"))
-
-        // $launchlink.append($button)
-        // $div2.append($("<div>").addClass("icons").append($a).append($button))
        
-
         $div.append($divVideo)
         $div.append($div2)
         $div.append($("<div>").addClass("icons").append($a).append($button))

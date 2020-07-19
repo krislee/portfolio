@@ -113,15 +113,12 @@ main {
 
 .paraContainer {
     padding-top: 100px;
-    /* height: 200px; */
     width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-bottom: 50px; */
 }
-
 
 .para {
     width: 90%;
@@ -157,23 +154,17 @@ h1 {
     opacity: 0.7;
 }
 .flex > div> .icons > a > .fa-github{
-    /* background-color: #111422; */
     color: black;
 }
 
 .launch {
     padding: 10px;
-    /* height: 70%; */
     display: flex;
     align-items: baseline;
     font-family: 'Baloo Da 2', cursive;
     font-size: 25px;
 }
 
-/* .launch > a {
-    text-decoration: none;
-    color: white;
-} */
 .launch > a:link{
     text-decoration: none;
     color: black;
@@ -233,7 +224,7 @@ h1 {
     text-align:center;
 }
 
-/* Navigation Bar */
+
 @media screen and (min-width: 940px) and (max-width:1200px) {
     .right-nav {
         width: 40%;
@@ -267,7 +258,6 @@ h1 {
     .bottom {
         padding: 15px;
     }
-
     .launch{
         font-size: 20px;
     }
@@ -297,16 +287,6 @@ h1 {
         font-size: 15px;
     }
 }
-/* 
-@media screen and (min-width: 600px) and (max-width:740px) {
-    .right-nav {
-        width: 55%;
-        margin-right:25px;
-    }
-    .right-burger{
-        display: none;
-    }
-} */
 
 @media screen and (max-width:599px) {
    .burger::before {
@@ -431,7 +411,7 @@ h1 {
     }
 }
 
-@media screen and (max-width:750px) {
+/* @media screen and (max-width:750px) {
     .videoDiv{
         height:375px;
     }
@@ -441,7 +421,7 @@ h1 {
     .projectheading{
         margin-top:-70px;
     }
-}
+} */
 
 @media screen and (max-width:749px) {
     .videoDiv{
@@ -449,6 +429,9 @@ h1 {
     }
     .paraContainer {
         padding-top: 200px;
+    }
+    .projectheading{
+        margin-top:-70px;
     }
     .icons {
         margin-bottom: 40px;
@@ -466,16 +449,11 @@ h1 {
     .flex > div:nth-child(2) >.videoDiv > .video, .flex > div:nth-child(4) >.videoDiv > .video {
         border: 3px solid #cccccc;
     }
-    /* .flex > div:nth-child(4) >.videoDiv > .video {
-        box-shadow: -15px -10px 8px grey;
-        border: 0px;
-    } */
     .flex > div:nth-child(2) >.videoDiv > .video, .flex > div:nth-child(4) >.videoDiv > .video {
         box-shadow: 0px 0px 0px grey;
     }
 
     .flex > div:nth-child(even) > .icons > a > .fa-github{
-        /* background-color: #111422; */
         color: white;
     }
 }
@@ -486,7 +464,6 @@ h1 {
     }
     .paraContainer {
         padding-top: 150px;
-        /* height: 150px; */
     }
 }
 
@@ -496,7 +473,6 @@ h1 {
     }
     .paraContainer {
         padding-top: 100px;
-        /* height: 150px; */
     }
     .flex > div:nth-child(3) > .icons {
         margin-top: 50px;
@@ -534,5 +510,3 @@ h1 {
         margin-top: 50px;
     }
 }
-
-/* @media screen and (max-width: 450px) and (min-width: ) */

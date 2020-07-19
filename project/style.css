@@ -19,10 +19,6 @@ nav {
     /* position: fixed; */
 }
 .hp-icon {
-    /* margin-left: 54%; */
-    /* margin-left: 2em; */
-    /* border-radius: 0; */
-    /* border:0; */
     width: 105px;
 }
 .icondiv {
@@ -75,15 +71,7 @@ nav {
 
 /* Preview About Me */
 
-/* .profile-pic > img {
-    width: 30vw;
-    display: block;
-    margin: auto;
-    border-radius: 100%;
-    border: 3px solid white;
-} */
-
-.hp-grid {
+.hp-flex {
     background-color: #111422;
     color: white;
     height: 650px;
@@ -105,15 +93,12 @@ nav {
     transform: translate(0px, 0px);
 }
 .short-blurb {
-    /* grid-area: 1/1/2/2; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-family: 'Baloo Da 2', cursive;
     font-size: 2em;
-    /* padding-left: 70px; */
-    /* text-align: center; */
     opacity: 0;
     transition: transform 2.5s ease-in-out;
     transform: translate(0px, 300px);
@@ -122,44 +107,13 @@ nav {
     opacity:1;
     transform: translate(0px, 0px);
 }
-
 .welcome, .aspiring, .hungry, .striving {
-    /* display:flex; */
     margin: 0;
     width: 100%;
-    /* line-height: 20px; */
 }
 .welcome {
     font-size: 75px;
 }
-
-/* .welcome {
-    animation: name 3s linear 2s 2 alternate-reverse
-}
-
-@keyframes name {
-    0% {opacity:0.2}
-    25% {opacity: 0.4}
-    50% {opacity:0.6}
-    75% {opacity: 0.8}
-    100% {opacity: 1}
-} */
-
-/* .hungry{
-    display: inline;
-    text-indent: 7px;
-}
-
-.hungry > span{
-    word-wrap: break-word;
-    white-space: nowrap;
-    color: rgb(217, 240, 17);
-    position: absolute;
-    opacity: 0;
-    overflow: hidden;
-    width: 100%;
-} */
-
 
 /* Preview Projects */
 .hp-grid2 {
@@ -167,42 +121,19 @@ nav {
     width: 100vw;
     grid-template-areas: "library library-description"
     "rps rps-description";
-     /* need to do fr in size in order to avoid the white space when minimizing the
-    videos because during minimizing the videos also shrink given that the video's
-    width is % */
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1.75fr 1fr;
-    /* padding-top: 30px; */
 }
 .hp-library {
     grid-area: library;
-    /* text-align: center; */
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin-top: 30px;
-    margin-bottom: 30px; */
-    /* height: 300px; */
-    /* align-items: flex-end; */
-    /* margin-top: 30px; */
-    /* margin-bottom: 30px; */
-    /* height: 300px; */
-    /* background-color: rgba(0, 0, 0, 0.708); */
-    /* border: 1px solid orange;
-    border-radius: 10px; */
-    height: 100%;
-    /* padding-bottom: 20px; */
-    /* position: relative;
-    overflow: hidden; */
-    
 }
 .hp-library-description {
     grid-area: library-description;
-    width: 75%;
-    align-self: center;
 }
-
 .hp-rps {
     grid-area: rps;
     display: flex;
@@ -214,32 +145,13 @@ nav {
 }
 .hp-rps-description {
     grid-area: rps-description;
-    width: 75%;
 }
-
-/* video {
-    width: 75%;
-    box-shadow: 17px 14px 10px grey;
-    align-self: center; 
-    background-color: black; */
-   /* line-height: 0; */
-   /* display: block; */
-   /* border: 1px solid black;
-   height: 300px;
-} */
 
 video {
     width: 60%;
     box-shadow: 17px 14px 10px grey;
-    align-self: center; 
-    background-color: black;
-   /* line-height: 0; */
    display: block;
    border: 1px solid black;
-   /* position: absolute; */
-   /* height: 90%; */
-   /* height: 100%; */
-   object-fit: cover;
 }
 
 video:hover {
@@ -270,7 +182,6 @@ h2 {
 }
 
 .featured {
-    /* font-size: 4.5em; */
     font-size: 72px;
     text-align: center;
     font-family: 'Baloo Da 2', cursive;
@@ -300,12 +211,9 @@ h2 {
 
 /* Code below is w3Schools */
 .fa-linkedin-square {
-    /* background: #007bb5; */
     color: white;
-    /* padding: 5px; */
     font-size: 80px;
     width: 56px;
-    /* height: 56px; */
     text-align: center;
     text-decoration: none;
     border-radius: 20px;
@@ -334,30 +242,19 @@ h2 {
     .right-burger{
         display: none;
     }
-    .hp-library-description, .hp-rps-description {
-        font-size: 1.5em;
-    }
     .icondiv {
         margin-left: 4%;
     }
-    /* .hp-icon {
-        margin-left: 39%;
-    } */
-    .hp-grid {
+    .hp-flex {
         padding-left:20px;
         padding-right:20px
+    }
+    .hp-library-description, .hp-rps-description {
+        font-size: 1.5em;
     }
 }
 
 @media screen and (min-width: 800px) and (max-width:939px) {
-    .short-blurb {
-        font-size: 1.5em;
-        /* font-size: 20px; */
-        /* padding-left: 30px; */
-    }
-    .profile-pic {
-        justify-content: center;
-    }
     .right-nav {
         width: 40%;
         margin-right:20px;
@@ -365,25 +262,22 @@ h2 {
     .right-burger{
         display: none;
     }
-
-    .hp-library-description, .hp-rps-description {
-        font-size: 1.5em;
-    }
-
-    /* .hp-grid {
-        height: 400px;
-    } */
-    .featured {
-        width: 100%;
-        /* font-size: 3.5em; */
-        font-size: 65px;
-    }
     .icondiv {
         margin-left: 4%;
     }
-    .hp-grid {
+    .hp-flex {
         padding-left:20px;
         padding-right:20px
+    }
+    .short-blurb, .hp-library-description, .hp-rps-description  {
+        font-size: 1.5em;
+    } 
+    .featured {
+        width: 100%;
+        font-size: 65px;
+    }
+    .bottom {
+        padding: 15px;
     }
     .fa-linkedin-square {
         font-size: 60px;
@@ -391,20 +285,9 @@ h2 {
     .fa-github {
         font-size: 70px;
     }
-    .bottom {
-        padding: 15px;
-    }
 }
 
 @media screen and (min-width: 600px) and (max-width:799px) {
-    .short-blurb {
-        font-size: 1.5em;
-        /* font-size: 15px; */
-        /* padding-left: 40px; */
-    }
-    .welcome {
-        font-size:50px;
-    }
     .right-nav {
         width: 50%;
         margin-right:20px;
@@ -412,23 +295,31 @@ h2 {
     .right-burger{
         display: none;
     }
-    .hp-library-description, .hp-rps-description {
-        font-size: 1.25em;  
-        /* text-align: center; */
+    .icondiv {
+        margin-left: 4%;
     }
-    .view-more {
-        padding: 5px;
+    .hp-flex {
+        padding-left:20px;
+        padding-right:20px
+    }
+    .short-blurb {
+        font-size: 1.5em;
+    }
+    .welcome {
+        font-size:50px;
     }
     .featured {
         width: 100%;
         font-size: 67px;
     }
-    .icondiv {
-        margin-left: 4%;
+    .hp-library-description, .hp-rps-description {
+        font-size: 1.25em;  
     }
-    .hp-grid {
-        padding-left:20px;
-        padding-right:20px
+    .view-more {
+        padding: 5px;
+    }
+    .bottom {
+        padding: 15px;
     }
     .fa-linkedin-square {
         font-size: 60px;
@@ -436,29 +327,7 @@ h2 {
     .fa-github {
         font-size: 70px;
     }
-    .bottom {
-        padding: 15px;
-    }
 }
-
-/*(@media screen and (max-width:650px) {
-    .short-blurb {
-        font-size: 1.35em;
-    }
-    /* img {
-        margin-right: 30px;
-    }
-    .right-nav {
-        width: 55%;
-        margin-right:25px;
-    }
-    .right-burger{
-        display: none;
-    }
-    .hp-grid {
-        height: 300px;
-    }
-}  */
 
 @media screen and (max-width:599px) {
     .burger::before {
@@ -498,44 +367,29 @@ h2 {
     .bottom-nav-about, .bottom-nav-project {
          padding-bottom: 15px;
     }
-    /* .profile-pic {
-        width: 40vw;
-        border-radius: 100%;
-    } */
     .icondiv {
         margin-left: 10%;
     }
     .short-blurb, .hp-library-description, .hp-rps-description {
-     font-size: 1.5em;
-     text-align: center;
-     padding-left: 0px;
-     margin: 0 auto;
+        font-size: 1.5em;
+        text-align: center;
+        padding-left: 0px;
+        margin: 0 auto;
     }
     .welcome {
-        /* width: 87px; */
         width: 100%;
-        /* margin: 0 auto; */
         text-align: center;
         margin-top: 20px;
         font-size: 40px;
         justify-content: center;
     }
-    .aspiring {
-        /* width: 203px; */
+    .aspiring, .hungry {
         width: 100%;
-        /* margin: 0 auto; */
         text-align: center;
         justify-content: center;
     }
-    .hungry {
-         /* width: 239px; */
-         width: 100%;
-         /* margin: 0 auto; */
-         text-align: center;
-         justify-content: center;
-    }
-    .hp-grid {
-        display: flex;
+
+    .hp-flex {
         width: 100%;
         flex-direction: column;
         align-items: center;

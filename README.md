@@ -64,4 +64,18 @@ Below 550px, each of the icons div containing the button and GitHub icon positio
 Below 749px, background color, border, and box-shadow is added to the second and forth container class <divs>, and the layout for the flex class <div> is changed to a column. 
 
 # Opacity change upon scrolling
-To change opacity from 0 to 1 when scrolling to a certain threshold, IntersectionObserver API was used. The IntersectionObserver is stored in opacityChange function, which is also called in the second then method after the create function, which makes the DOM elements. The opacityChange function needs to be in the then method because the elements that are created will now be as arguments for the observe method. Before the observe method can be used, the opacityChange function needs to return objectsfor each div. In the opacityChange function, each container class div will have a new id added. The CSS will have the opacity as 1. 
+To change opacity from 0 to 1 when scrolling to a certain threshold, IntersectionObserver API is used. The IntersectionObserver is stored in opacityChange function, which is also called in the second then method after the create function, which makes the DOM elements. The opacityChange function needs to be in the then method because the elements that are created will now be as arguments for the observe method. The observe method is attached to the opacity
+change function. The opacityChange function needs to run 5 times to create and return an intersection observer for each container class <div> . In each intersection observer, a callback function is run. The callback function receives a list of IntersectionObserverEntry objects, and consists of looping through the entries, or elements. If the elements is intersecting at a specific threshold, then the container class <div> will have a new id added with the opacity as 1 for the id CSS.
+
+# About me div overlapping with a background div
+Create a height large enough for the background <div> in order for the <div> containing the about me content to be contained inside the background <div>. No z-index is neccessary because the content <div> follows the background <div> on HTML.
+
+# About me div and skills div slide up upon scolling
+To have the about me and skills div slide up, both divs will start out below its original position (400px below for about me <div> and 300px below for skills <div> and have an opacity 0. Since scolling is needed to translate the position and change the opacity to 1, the IntersectionObserver API is used to add a new id for each the about me and skills divs. The new ids will have the new CSS properties. 
+The threshold will increse for the IntersectionObserver below 600px to ensure scrolling is needed in window sizes smaller than desktop size for the about me <div>. 
+
+# Separate the CSS of Linkedin and Github icons from the about me section and footer
+Give an id to the footer icons so that the CSS will override the styles from the class the footer cions share with the about me section
+
+# Google contact form overlaps with header
+Give a set height of header, 300px, and a set height of 600px for the <div> containing the google contact form <iframe>. Give an absolute position to the <iframe> and assign 600px to the top so that it will slightly below the header. To horizontally center the <iframe>, translate -50%. To vertically center the <iframe>, translate -50% again. 

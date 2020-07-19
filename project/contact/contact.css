@@ -80,8 +80,8 @@ nav {
 iframe{
     width: 90%;
     position: absolute;
-    top:600px;
-    left: 50%;
+    top: 600px;
+    /* left: 50%; */
     transform: translate(-50%, -50%);
 }
 
@@ -115,12 +115,9 @@ h1 {
 
 /* Code below is w3Schools */
 .fa-linkedin-square {
-    /* background: #007bb5; */
     color: white;
-    /* padding: 5px; */
     font-size: 80px;
     width: 56px;
-    /* height: 56px; */
     text-align: center;
     text-decoration: none;
     border-radius: 20px;

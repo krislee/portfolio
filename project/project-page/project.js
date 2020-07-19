@@ -6,7 +6,7 @@ $burger.on('click', function(e) {
 })
 
 $(window).resize (function(e) {
-   if($(window).width()<600){
+   if($(window).width()>600){
        $('.right-burger').removeClass('show')
        $('.burger').removeClass('xcross')
    }

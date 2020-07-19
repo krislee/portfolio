@@ -188,22 +188,14 @@ Since we need to add ids to different divs, we need to create an IntersectionObs
 Also, since the container class divs are created by jQuery, we can only select the divs after it is created in the create function in the then method. Therefore, the IntersectionObserver and observe are both placed inside the then method following the create function.
 
 ## Issues and Resolutions
-**Error**: $ not defined after deployment on GitHub pages
-**Resolution**: Added an 's' to http for the script tag of jQuery
-
-**Error**:Opacity changed for the whole project page upon scrolling
-**Resolution**: Create IntersectionObserver for each container class div
-
-**Error**: Link for GitHub icon on project page was not working
-**Resolution**: Text need to be appended to a tag and not button
-
-**Error**: Navigation drop-down re-appeared after maximizing the window and minimizing the window if user did not click.
-**Resolution**: Add a function to remove the class after maximizing the window
-
-
-#### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object
+**ERROR**: $ not defined after deployment on GitHub pages                                
+**RESOLUTION**: Added an 's' to http for the script tag of jQuery
+**ERROR**: Opacity changed for the whole project page upon scrolling                                
+**RESOLUTION**: Create IntersectionObserver for each container class div
+**ERROR**: Link for GitHub icon on project page was not working                                
+**RESOLUTION**: Text need to be appended to a tag and not button
+**ERROR**: Navigation drop-down re-appeared after maximizing the window and minimizing the window if user did not click.                                
+**RESOLUTION**: Add a function to remove the class after maximizing the window
 
 ## Previous Project Worksheet
  - [Readme's](https://github.com/jkeohan/fewd-class-repo/tree/master/final-project-worksheet/project-worksheet-examples)

@@ -122,6 +122,7 @@ Make About Me Page
 
 ## Additional Libraries
 Font Awesome library used for the Linkedin, Github, and Wordpress icons
+
 jQuery used to make/remove hamburger icon, make elements in project page, add classes for additional CSS properties under certain conditions
 
 ## Code Snippet
@@ -190,10 +191,13 @@ Also, since the container class divs are created by jQuery, we can only select t
 ## Issues and Resolutions
 **ERROR**: $ not defined after deployment on GitHub pages                                
 **RESOLUTION**: Added an 's' to http for the script tag of jQuery
+
 **ERROR**: Opacity changed for the whole project page upon scrolling                                
 **RESOLUTION**: Create IntersectionObserver for each container class div
+
 **ERROR**: Link for GitHub icon on project page was not working                                
 **RESOLUTION**: Text need to be appended to a tag and not button
+
 **ERROR**: Navigation drop-down re-appeared after maximizing the window and minimizing the window if user did not click.                                
 **RESOLUTION**: Add a function to remove the class after maximizing the window
 

@@ -197,7 +197,7 @@ Also, since the container class divs are created by jQuery, we can only select t
 **Error**: Link for GitHub icon on project page was not working
 **Resolution**: Text need to be appended to a tag and not button
 
-**Error**: Navigation drop-down re-appeared after maximizing the window and minimizing the window if user did not click. 
+**Error**: Navigation drop-down re-appeared after maximizing the window and minimizing the window if user did not click.
 **Resolution**: Add a function to remove the class after maximizing the window
 
 

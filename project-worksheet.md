@@ -200,7 +200,3 @@ Also, since the container class divs are created by jQuery, we can only select t
 
 **ERROR**: Navigation drop-down re-appeared after maximizing the window and minimizing the window if user did not click.                                
 **RESOLUTION**: Add a function to remove the class after maximizing the window
-
-## Previous Project Worksheet
- - [Readme's](https://github.com/jkeohan/fewd-class-repo/tree/master/final-project-worksheet/project-worksheet-examples)
- - [Best of class readme](https://github.com/jkeohan/fewd-class-repo/blob/master/final-project-worksheet/project-worksheet-examples/portfolio-gracie.md)

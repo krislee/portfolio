@@ -109,4 +109,8 @@ If you're looking for an extra challenge, try tackling some of the tasks below:
 
 - JavaScript
 	- [JavaScript Timers](https://developer.mozilla.org/en-US/Add-ons/Code_snippets/Timers)
+
+## Previous Project Worksheet
+ - [Readme's](https://github.com/jkeohan/fewd-class-repo/tree/master/final-project-worksheet/project-worksheet-examples)
+ - [Best of class readme](https://github.com/jkeohan/fewd-class-repo/blob/master/final-project-worksheet/project-worksheet-examples/portfolio-gracie.md)
 ---

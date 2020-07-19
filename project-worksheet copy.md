@@ -89,43 +89,100 @@ Make About Me Page
 #### MVP
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Home Page Icon | L | 1hr | -hr | -hr|
-| Regular Nav | H | 2hr | -hr | -hr|
-| Responsive Navigation | H | 3hr| -hr | -hr |
-| Home Page Header| H | 1hr | hr | -hr|
-| Responsive Home Page Header | H | 2hr| hr | -hr |
-| Home Page Project Preview | H | 2hr | -hr | -hr|
-| Responsive Home Page Project Preview | H | 2hr | -hr | -hr|
-| Social Media Icon | L | 1hr | -hr | -hr|
-| About Me Header Page | H | 2hr | -hr | -hr|
-| About Me Page Actual Content | H | 2hr | -hr | -hr|
-| Responsive About Me Page | H | 3hr | -hr | -hr|
-| Contact Me Header Page | M | 1hr | -hr | -hr|
-| Contact Me Page Actual Content | H | 3hr | -hr | -hr|
-| Responsive Contact Me Page | H | 3hr | -hr | -hr|
-| Project Header Page | L | 1hr | -hr | -hr|
-| Google Sheet API | H | 3hr | -hr | -hr|
-| Project Page Flexbox | H | 2hr | -hr | -hr|å
-| Responsive Project Page | H | 3hr | -hr | -hr|
-| Documentation | H | 6hr | -hr | -hr|
-| Deployment | H | 2hr | -hr | -hr|
-| Total | H | 37hrs| -hrs | -hrs |
+| Home Page Icon | L | 1hr | 1.5hr | 1.5hr|
+| Regular Nav | H | 2hr | 2hr | 2hr|
+| Responsive Navigation | H | 3hr| 5hr | 5hr |
+| Home Page Header| H | 1hr | 2hr | 2hr|
+| Responsive Home Page Header | H | 2hr| 4hr | 4hr |
+| Home Page Project Preview | H | 2hr | 4hr | 4hr|
+| Responsive Home Page Project Preview | H | 2hr | 4hr | 4hr|
+| Social Media Icon | L | 1hr | 2hr | 2hr|
+| About Me Header Page | H | 2hr | 4hr | 4hr|
+| About Me Page Actual Content | H | 2hr | 2hr | 2hr|
+| Responsive About Me Page | H | 3hr | 3hr | 3hr|
+| Contact Me Header Page | M | 1hr | 0.5hr | 0.5hr|
+| Contact Me Page Actual Content | H | 3hr | 2hr | 2hr|
+| Responsive Contact Me Page | H | 3hr | 0.5hr | 0.5hr|
+| Project Header Page | L | 1hr | 0hr | 0hr|
+| Google Sheet API | H | 3hr | 2hr | 2hr|
+| Project Page Flexbox | H | 2hr | 1hr | 1hr|
+| Responsive Project Page | H | 3hr | 6hr | 6hr|
+| Documentation | H | 6hr | 6hr | 6hr|
+| Deployment | H | 2hr | 2hr | 2hr|
+| Total | H | 37hrs| 53.5hrs | 53.5hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Home Page Project Preview Carousel | H | 5hr | -hr | -hr|
-| Clickable Github icons on Project Page | L | 2hr | 3hr | 3hr|
-| Interactive Banner | M | 3hr | 6hr |6hr|
+| Clickable Github icons on Project Page | L | 2hr | 1hr | 1hr|
+| Interactive Banner | M | 3hr | 10hr |10hr|
 | Bootstrap | H | 6hr | -hr | -hr|
-| Total | H | 16hrs| -hrs | -hrs |
+| Total | H | 16hrs| 11hrs | 11hrs |
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project. 
+Font Awesome library used for the Linkedin, Github, and Wordpress icons
+jQuery used to make/remove hamburger icon, make elements in project page, add classes for additional CSS properties under certain conditions
 
 ## Code Snippet
-The IntersectionObserver allows for 
+```javascript
+.then(retrievedData => {
+    console.log(retrievedData)
+    const arr = retrievedData.feed.entry.map(eachentry => {
+        return {
+            description: eachentry.gsx$description.$t,
+            image: eachentry.gsx$image.$t,
+            title: eachentry.gsx$title.$t,
+            url: eachentry.gsx$url.$t,
+            launch: eachentry.gsx$launch.$t
+        }
+    })
+    console.log(arr)
+    
+    create(arr)
+    let projectDiv1 = document.querySelectorAll('.container')[0]
+    let projectDiv2 = document.querySelectorAll('.container')[1]
+    let projectDiv3 = document.querySelectorAll('.container')[2]
+    let projectDiv4 = document.querySelectorAll('.container')[3]
+    let projectDiv5 = document.querySelectorAll('.container')[4]
 
+    let a = opacityChange(0)
+    let b = opacityChange(1)
+    let c = opacityChange(2)
+    let d = opacityChange(3)
+    let e = opacityChange(4)
+
+    a.observe(projectDiv1)
+    b.observe(projectDiv2) 
+    c.observe(projectDiv3)
+    d.observe(projectDiv4) 
+    e.observe(projectDiv5)
+
+})
+
+const opacityChange = (num) => {
+    let options = {
+        root: null,
+        rootMargin: '0px',
+        threshold:0.8
+    }
+
+    let observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+            console.log(entry)
+            if (entry.isIntersecting) {
+                document.querySelectorAll('.container')[num].setAttribute('id', 'projects-opacity')
+            }
+        })
+    }, options)
+   return observer
+}
+```
+The IntersectionObserver tracks when an observed DOM element enters and exits the visible viewport. The DOM element that is being observed is each container class <div> in the project page. Hence, the observe() method is called 5 times. The IntersectionObserver receives a callback function and options parameter. 
+The callback function receives the entries parameter, which is an array of IntersectionObserverEntry objects. Each object contains intersection information for the observed element. The entries intersection information is delivered asynchronously. One of the entries interesection information is if the observed element crossed a certain threshold. If the observed element did, then in the callback function the observed element will have an id added to it. The id CSS will change the opacity from 0 to 1 (the observed element originally had an opacity of 0 in its class CSS).
+For the options parameter, it is an object. The root is the browser's viewport, so root is null. The threshold is an array of intersectionRatio thresholds. intersectionRatio is how much the observed element is visible. The callback function will be called everytime the intersectionRatio crosses the threshold value(s). When the callback function is invoked, if the condition in the callback function is true, then the id will get added to the container class <div>. 
+Since we need to add ids to different <div>s, we need to create an IntersectionObserver 5 times.
+Also, since the container class <div>s are created by jQuery, we can only select the <div>s after it is created in the create function in the then method. Therefore, the IntersectionObserver and observe are both placed inside the then method following the create function.
 
 ## Issues and Resolutions
 **Error** $ not defined after deployment on GitHub pages

@@ -60,7 +60,7 @@ const opacityChange = (num) => {
 
     let observer = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry) => {
-            // console.log(entry)
+            console.log(entry)
             if (entry.isIntersecting) {
                 document.querySelectorAll('.container')[num].setAttribute('id', 'projects-opacity')
             }

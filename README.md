@@ -29,19 +29,19 @@ Right and left paddings were given to the flexbox because the image and text div
 
 Font-sizes are important for responsiveness. My name, Kristy Lee, is set to 75px and the rest of the paragraph font-size is 2em. The paragraph font-size is shrunk a little to 1.5em to look better but still big enough below 940px. My name font-size is also shrunk a little below 800px, from 75px
 
-# Homepage Featured Projects
+## Homepage Featured Projects
 A grid is formed for the parent container with class hp-grid2. It contains 4 child div items with column width dimensions of 1.75fr for left column, 1fr for right column, and same row width dimensions of 1fr. A larger width is given for the left column so that the video placed in the left columns will occupy more space. The grid itself is also given a width of 100vw.
 
 The div containing the video for each of the left rows is display flexed so that the the video can easily be centered horizontally AND vertically. A margin-top for the bottom video is given to give more space between the videos, and a margin-bottom for the bottom video is given to give space between the video and footer.
 
 Font-size for the paragraphs was originally set to 30px but then set to a relative unit, 1.5em from 800px to 1200px and below 600px. It was also set to 1.25em between 600px to 799px. 
 
-# Footer
+## Footer
 The div that contains the icon images is display flexed to make the icon images next to each other and to horizontally and vertically centered. Top margin of 80px is given so that there is space between the content and footer. Bottom margin is given so that there is space between the div and the copyright div.
 
 The code for the icons were from w3Schools. Font-size and width were altered for the 2 icons. A right margin was added to the Linkedin icon to give space between the 2 icons. The height and padding was removed from the Linkedin icon because it complicated the look of the icon during responsive mode. 
 
-# Generate the videos, title, descriptions, GitHub icon, and button from Google Sheets API: 
+## Generate the videos, title, descriptions, GitHub icon, and button from Google Sheets API: 
 The project video link, github link, website link, title, and description were pulled using google sheets API. The fetch method is used to pull the JSON data out from google sheets, followed by two then methods:
 1. Convert the JSON data into JavaScript objects after retrieving the JSON data
 2. Pull only the specific information we need and storing it as objects. The objects are stored in an array. The array will then be used as an argument in the function. The function will use the objects in the array to do DOM. The function is inside the then method so that the data will be ready to used in the function. 
@@ -54,7 +54,7 @@ To create the DOM, the function called create will loop through the objects insi
 Both the button and a tags will be in a div with icons class.
 5. The $divVideo, $div2, div containing the button and a tags will all be appended to another div with a class called container. The container class div is appended to the div with a class flex on HTML.
 
-# Project page CSS display
+## Project page CSS display
 The div with class flex has a display flex and flex-wrapped since more projects will be added in the near future. A grid display would have made the layout to fixed for additional projects to be added. Each container class div inside the flex div is horizontally centered using center justify-content. The contents inside container class div are centered and displayed in a column by making the div a flexbox. The width is 50% so that 2 divs will fit (this will change under 600px).
 
 The direct parent of video is a div and will have its height be adjusted each time so that the video size will also be adjusted. The container containing the title and description will have padding-top differ each responsivenes. In desktop view, the title is covered by the video so a padding-top of 100px is added. As the window is minimized, the video is minimized so it doesn't cover the title as much so the padding-top is also decreased between the video and the text.
@@ -63,19 +63,19 @@ Below 550px, each of the icons div containing the button and GitHub icon positio
 
 Below 749px, background color, border, and box-shadow is added to the second and forth container class divs, and the layout for the flex class div is changed to a column. 
 
-# Opacity change upon scrolling
+## Opacity change upon scrolling
 To change opacity from 0 to 1 when scrolling to a certain threshold, IntersectionObserver API is used. The IntersectionObserver is stored in opacityChange function, which is also called in the second then method after the create function, which makes the DOM elements. The opacityChange function needs to be in the then method because the elements that are created will now be as arguments for the observe method. The observe method is attached to the opacity
 change function. The opacityChange function needs to run 5 times to create and return an intersection observer for each container class div. In each intersection observer, a callback function is run. The callback function receives a list of IntersectionObserverEntry objects, and consists of looping through the entries, or elements. If the elements is intersecting at a specific threshold, then the container class div will have a new id added with the opacity as 1 for the id CSS.
 
-# About me div overlapping with a background div
+## About me div overlapping with a background div
 Create a height large enough for the background div in order for the div containing the about me content to be contained inside the background div. No z-index is neccessary because the content div follows the background div on HTML.
 
-# About me div and skills div slide up upon scolling
+## About me div and skills div slide up upon scolling
 To have the about me and skills div slide up, both divs will start out below its original position (400px below for about me div and 300px below for skills div and have an opacity 0. Since scolling is needed to translate the position and change the opacity to 1, the IntersectionObserver API is used to add a new id for each the about me and skills divs. The new ids will have the new CSS properties. 
 The threshold will increse for the IntersectionObserver below 600px to ensure scrolling is needed in window sizes smaller than desktop size for the about me div. 
 
-# Separate the CSS of Linkedin and Github icons from the about me section and footer
+## Separate the CSS of Linkedin and Github icons from the about me section and footer
 Give an id to the footer icons so that the CSS will override the styles from the class the footer cions share with the about me section
 
-# Google contact form overlaps with header
+## Google contact form overlaps with header
 Give a set height of header, 300px, and a set height of 600px for the div containing the google contact form iframe. Give an absolute position to the iframe and assign 600px to the top so that it will slightly below the header. To horizontally center the iframe, translate -50%. To vertically center the iframe, translate -50% again. 

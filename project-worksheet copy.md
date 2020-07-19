@@ -178,24 +178,27 @@ const opacityChange = (num) => {
    return observer
 }
 ```
-The IntersectionObserver tracks when an observed DOM element enters and exits the visible viewport. The DOM element that is being observed is each container class <div> in the project page. Hence, the observe() method is called 5 times. The IntersectionObserver receives a callback function and options parameter. 
+The IntersectionObserver tracks when an observed DOM element enters and exits the visible viewport. The DOM element that is being observed is each container class div in the project page. Hence, the observe() method is called 5 times. The IntersectionObserver receives a callback function and options parameter. 
+
 The callback function receives the entries parameter, which is an array of IntersectionObserverEntry objects. Each object contains intersection information for the observed element. The entries intersection information is delivered asynchronously. One of the entries interesection information is if the observed element crossed a certain threshold. If the observed element did, then in the callback function the observed element will have an id added to it. The id CSS will change the opacity from 0 to 1 (the observed element originally had an opacity of 0 in its class CSS).
-For the options parameter, it is an object. The root is the browser's viewport, so root is null. The threshold is an array of intersectionRatio thresholds. intersectionRatio is how much the observed element is visible. The callback function will be called everytime the intersectionRatio crosses the threshold value(s). When the callback function is invoked, if the condition in the callback function is true, then the id will get added to the container class <div>. 
-Since we need to add ids to different <div>s, we need to create an IntersectionObserver 5 times.
-Also, since the container class <div>s are created by jQuery, we can only select the <div>s after it is created in the create function in the then method. Therefore, the IntersectionObserver and observe are both placed inside the then method following the create function.
+
+For the options parameter, it is an object. The root is the browser's viewport, so root is null. The threshold is an array of intersectionRatio thresholds. intersectionRatio is how much the observed element is visible. The callback function will be called everytime the intersectionRatio crosses the threshold value(s). When the callback function is invoked, if the condition in the callback function is true, then the id will get added to the container class div. 
+Since we need to add ids to different divs, we need to create an IntersectionObserver 5 times.
+
+Also, since the container class divs are created by jQuery, we can only select the divs after it is created in the create function in the then method. Therefore, the IntersectionObserver and observe are both placed inside the then method following the create function.
 
 ## Issues and Resolutions
-**Error** $ not defined after deployment on GitHub pages
-**Resolution** Added an 's' to http for the script tag of jQuery
+**Error**: $ not defined after deployment on GitHub pages
+**Resolution**: Added an 's' to http for the script tag of jQuery
 
-**Error** Opacity changed for the whole project page upon scrolling
-**Resolution** Create IntersectionObserver for each container class <div> 
+**Error**:Opacity changed for the whole project page upon scrolling
+**Resolution**: Create IntersectionObserver for each container class div
 
-**Error** Link for GitHub icon on project page was not working
-**Resolution** Text need to be appended to <a> tag and not <button>
+**Error**: Link for GitHub icon on project page was not working
+**Resolution**: Text need to be appended to a tag and not button
 
-**Error** Navigation drop-down re-appeared after maximizing the window and minimizing the window if user did not click. 
-**Resolution** Add a function to remove the class after maximizing the window
+**Error**: Navigation drop-down re-appeared after maximizing the window and minimizing the window if user did not click. 
+**Resolution**: Add a function to remove the class after maximizing the window
 
 
 #### SAMPLE.....

@@ -2,9 +2,7 @@
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
+The schedule will be used to keep track of my progress throughout the week and align with our expectations.  
 
 |  Day | Deliverable | Status
 |---|---| ---|
@@ -23,7 +21,7 @@ I am building a portfolio that will have a brief description about me, showcase 
 
 ## Google Sheet
 
-Include link to your google sheet here.  Here is the sample [Suresh had used in class](https://docs.google.com/spreadsheets/d/1V1M3Eq1NXH2PNmeTlVviRhEjX9kenq769Vo2P5mMtro/edit#gid=0) 
+Class Google Sheet link [here](https://docs.google.com/spreadsheets/d/1V1M3Eq1NXH2PNmeTlVviRhEjX9kenq769Vo2P5mMtro/edit#gid=0) 
 
 ## Wireframes
 
@@ -37,11 +35,7 @@ Include link to your google sheet here.  Here is the sample [Suresh had used in 
 [My Time/Priority Matrix](https://res.cloudinary.com/dhiwn0i0g/image/upload/v1594594822/IMG_0095_lwlso3.jpg)
 
 
-### MVP/PostMVP - 5min
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
-
-#### MVP (examples)
+### MVP/PostMVP 
 
 Make Home Page
 
@@ -181,7 +175,7 @@ const opacityChange = (num) => {
 ```
 The IntersectionObserver tracks when an observed DOM element enters and exits the visible viewport. The DOM element that is being observed is each container class div in the project page. Hence, the observe() method is called 5 times. The IntersectionObserver receives a callback function and options parameter. 
 
-The callback function receives the entries parameter, which is an array of IntersectionObserverEntry objects. Each object contains intersection information for the observed element. The entries intersection information is delivered asynchronously. One of the entries interesection information is if the observed element crossed a certain threshold. If the observed element did, then in the callback function the observed element will have an id added to it. The id CSS will change the opacity from 0 to 1 (the observed element originally had an opacity of 0 in its class CSS).
+The callback function receives the entries parameter, which is an array of IntersectionObserverEntry objects. Each object contains intersection information for the observed element. The entries intersection information is delivered asynchronously. One of the entries intersection information is if the observed element crossed a certain threshold. If the observed element did, then in the callback function the observed element will have an id added to it. The id CSS will change the opacity from 0 to 1 (the observed element originally has an opacity of 0 in its class CSS).
 
 For the options parameter, it is an object. The root is the browser's viewport, so root is null. The threshold is an array of intersectionRatio thresholds. intersectionRatio is how much the observed element is visible. The callback function will be called everytime the intersectionRatio crosses the threshold value(s). When the callback function is invoked, if the condition in the callback function is true, then the id will get added to the container class div. 
 Since we need to add ids to different divs, we need to create an IntersectionObserver 5 times.
@@ -192,11 +186,11 @@ Also, since the container class divs are created by jQuery, we can only select t
 **ERROR**: $ not defined after deployment on GitHub pages                                
 **RESOLUTION**: Added an 's' to http for the script tag of jQuery
 
-**ERROR**: Opacity changed for the whole project page upon scrolling                                
-**RESOLUTION**: Create IntersectionObserver for each container class div
+**ERROR**: Opacity changes for the whole project page upon scrolling                                
+**RESOLUTION**: Creatde IntersectionObserver for each container class div
 
-**ERROR**: Link for GitHub icon on project page was not working                                
-**RESOLUTION**: Text need to be appended to a tag and not button
+**ERROR**: Link for GitHub icon on project page is not working                                
+**RESOLUTION**: Text needed to be appended to a tag and not button
 
-**ERROR**: Navigation drop-down re-appeared after maximizing the window and minimizing the window if user did not click.                                
-**RESOLUTION**: Add a function to remove the class after maximizing the window
+**ERROR**: Navigation drop-down re-appears after maximizing the window and minimizing the window if user does not click X.                              
+**RESOLUTION**: Added a function to remove the class after maximizing the window

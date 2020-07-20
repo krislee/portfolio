@@ -28,7 +28,6 @@ const slideUp = () => {
     }
     let observer = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry) => {
-            console.log(entry)
             if(entry.isIntersecting) {
                 document.querySelector('.about').setAttribute('id','slide-up')
                 document.querySelector('.profile').setAttribute('id', 'profile-appear')
@@ -40,7 +39,7 @@ const slideUp = () => {
 }
 slideUp()
 
-
+// IntersectionObserver is introduced to me by my peer, Kwok Ren
 const slideUp2 = () => {
     let options = {
         root: null,
@@ -50,7 +49,6 @@ const slideUp2 = () => {
     
     let observer = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry) => {
-            console.log(entry)
             if (entry.isIntersecting) {
                 document.querySelector('.skills-outerdiv').setAttribute('id', 'slide-up-skills')
                 document.querySelectorAll('.flex-icon')[0].setAttribute('id', 'icons-appear')

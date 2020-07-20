@@ -18,7 +18,6 @@ const url = 'https://spreadsheets.google.com/feeds/list/1TfxvlFob_O3oOgSFAW-pfBB
 fetch(url)
 .then(response => response.json())
 .then(retrievedData => {
-    console.log(retrievedData)
     const arr = retrievedData.feed.entry.map(eachentry => {
         return {
             description: eachentry.gsx$description.$t,
@@ -28,7 +27,6 @@ fetch(url)
             launch: eachentry.gsx$launch.$t
         }
     })
-    console.log(arr)
     
     create(arr)
     let projectDiv1 = document.querySelectorAll('.container')[0]
@@ -51,6 +49,7 @@ fetch(url)
 
 })
 
+// IntersectionObserver is introduced to me by my peer, Kwok Ren
 const opacityChange = (num) => {
     let options = {
         root: null,
@@ -60,7 +59,6 @@ const opacityChange = (num) => {
 
     let observer = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry) => {
-            console.log(entry)
             if (entry.isIntersecting) {
                 document.querySelectorAll('.container')[num].setAttribute('id', 'projects-opacity')
             }

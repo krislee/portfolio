@@ -1,5 +1,6 @@
 # project-1-portfolio
-
+ 
+View my portfolio [here](https://krislee.github.io/project-1-portfolio/project/)
 ## Navigation Bar
 
 The navigation bar was created using flexbox. The container, nav, was flex display. Its child items, the div containing the homepage icon and the second div containing the right 3 tabs, were horizontally spaced using space-between for justify-content and vertically spaced using center.The second div was also display flexed so that the 3 tab, which are each divs, could be horizontal instead of vertically stacked. The 3 tabs were horizontally spaced with space-around. Since the nav two direct child items div are pushed to each end, left margin and right margins were given to the first and second div, respectively. The left div has a 5% margin-left and right div has 50px right margin. Below 1200px, the left div has a 4% margin-left and right div has a 20px.

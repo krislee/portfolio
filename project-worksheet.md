@@ -12,7 +12,7 @@ The schedule will be used to keep track of my progress throughout the week and a
 |Day 3| Core Application Structure (HTML, CSS, etc.)/MVP & Bug Fixes | Complete
 |Day 4| MVP & Bug Fixes | Complete
 |Day 5| Final Touches | Complete
-|Day 6| Present | Incomplete
+|Day 6| Present | Complete
 
 
 ## Project Description

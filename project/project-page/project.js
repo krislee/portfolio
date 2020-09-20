@@ -34,18 +34,24 @@ fetch(url)
     let projectDiv3 = document.querySelectorAll('.container')[2]
     let projectDiv4 = document.querySelectorAll('.container')[3]
     let projectDiv5 = document.querySelectorAll('.container')[4]
+    let projectDiv6 = document.querySelectorAll('.container')[5]
+    let projectDiv7 = document.querySelectorAll('.container')[6]
 
     let a = opacityChange(0)
     let b = opacityChange(1)
     let c = opacityChange(2)
     let d = opacityChange(3)
     let e = opacityChange(4)
+    let f = opacityChange(5)
+    let g = opacityChange(6)
 
     a.observe(projectDiv1)
     b.observe(projectDiv2) 
     c.observe(projectDiv3)
     d.observe(projectDiv4) 
     e.observe(projectDiv5)
+    f.observe(projectDiv6)
+    g.observe(projectDiv7)
 
 })
 

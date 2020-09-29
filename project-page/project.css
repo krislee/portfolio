@@ -73,7 +73,7 @@ nav {
 }
 
 .title {
-    font-size: 3em;
+    font-size: 3.5em;
     margin-bottom: 20px !important;
 }
 
@@ -402,7 +402,7 @@ h1 {
         margin-bottom: 0px;
     }
 
-    .flex > div:nth-child(even) {
+    .flex > div:nth-child(odd) {
         background-color: #111422;
         color: white;
     }
@@ -411,7 +411,7 @@ h1 {
         box-shadow: 0px 0px 0px grey;
     }
 
-    .flex > div:nth-child(even) > .paraContainer > .icons > a > .fa-github{
+    .flex > div:nth-child(odd) > .paraContainer > .icons > a > .fa-github{
         color: white;
 
     }

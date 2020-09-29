@@ -427,8 +427,9 @@ h2 {
      .view-more {
          padding: 10px;
          width: 60%;
-         font-size: 1em;
+         font-size: 20px;
      }
+
      .bottom {
          padding: 10px;
          margin-top:50px;
@@ -447,4 +448,11 @@ h2 {
      }
 
     
+}
+
+@media only screen and (max-width:400px) {
+    .view-more{
+        font-size: 16px;
+        padding: 5px;
+    }
 }

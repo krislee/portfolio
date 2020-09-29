@@ -17,11 +17,8 @@ The schedule will be used to keep track of my progress throughout the week and a
 
 ## Project Description
 
-I am building a portfolio that will have a brief description about me, showcase the projects I have built so far, and have a contact page for people to reach me. The portfolio will be built using HTML, CSS, and JavaScript jQuery. 
+I built a portfolio that contains a brief description about me, the projects I have built so far, and a contact page for people to reach me. The portfolio will be built using HTML, CSS, and JavaScript jQuery. 
 
-## Google Sheet
-
-Class Google Sheet link [here](https://docs.google.com/spreadsheets/d/1V1M3Eq1NXH2PNmeTlVviRhEjX9kenq769Vo2P5mMtro/edit#gid=0) 
 
 ## Wireframes
 

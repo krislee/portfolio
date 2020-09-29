@@ -12,14 +12,18 @@ body {
     align-items: center;
     background-image: url("../assets/skyline.jpg");
     background-size: cover;
-    height: 1100px;
+    /* height: 1100px; */
     /* height: 1000px; */
 }
 
 .about {
-    width: 70%;
-    padding: 20px;
-    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* margin-top: 10px; */
     background-color: rgba(255, 255, 255,0);
     color: black;
     transform: translate(0px,400px);
@@ -38,22 +42,38 @@ body {
 
 #profile-appear {
     width: 25vw;
-    height: 23vw;
+    height: 25vw;
     display: block;
     margin: auto;
     border-radius: 100%;
     border: 3px solid black;
 }
 
+.about > div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+}
+
+.about > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+}
+
 p {
-    width: 70%;
-    margin: auto;
-    margin-top: 30px;
+    width: 90%;
+    /* margin: auto;
+    margin-top: 30px; */
 }
 h1 {
     width: 80%;
     text-align: center;
-    font-size: 5em;
+    font-size: 3em;
     margin: auto;
     margin-top: 30px;
 }
@@ -95,24 +115,24 @@ h1 {
 }
 /* Code below is w3Schools */
 .fa-linkedin-square {
-    background: #007bb5;
-    color: white;
-    padding: 10px;
-    font-size: 51px;
-    width: 49px;
+    /* background: #007bb5; */
+    color: #007bb5;
+    /* padding: 10px; */
+    font-size: 50px;
+    /* width: 49px; */
     text-align: center;
     text-decoration: none;
     border-radius: 20px;
 }
 .fa-github {
-    font-size: 60px;
+    font-size: 50px;
     color: black;
-    margin-right: 43px;
+    margin-right: 40px;
 }
 .fa-wordpress {
     color: #22759A;
-    font-size: 60px;
-    margin-right: 43px;
+    font-size: 50px;
+    margin-right: 40px;
 }
 .fa:hover {
     opacity: 0.7;
@@ -125,13 +145,13 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 80%;
+    width: 70%;
  }
 .icons {
-     width: 15%;
-     height: 15%;
+     width: 12%;
+     height: 12%;
      display: block;
-     margin: 15px;
+     margin: 30px;
 }
 
 /* Footer */
@@ -139,7 +159,7 @@ h1 {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     padding: 20px;
-    margin-top: 80px;
+    margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
@@ -177,9 +197,11 @@ h1 {
 .copy {
     margin-top: 16px;
     margin-bottom: 16px;
+    width: 100%;
 }
 
 /* Navigation bar */
+
 nav {
     width: 100%;
     display: flex;
@@ -188,8 +210,15 @@ nav {
     color: white;
     height: 100px;
     align-items: center;
-    font-family: 'Cinzel', serif;
+    font-family: 'Baloo Da 2', cursive;
     border-bottom: 3px solid white;
+    /* position: fixed; */
+}
+.hp-icon {
+    width: 105px;
+}
+.icondiv {
+    margin-left: 5%;
 }
 
 .right-nav {
@@ -198,38 +227,23 @@ nav {
     width: 30%;
     justify-content: space-around;
 }
-
-/* hide the bottom navigation at all other sizes except below 600px */
-.right-burger{
-    display: none;
-}
-
-.hp-icon {
-    width: 105px;
-}
-.icondiv {
-    margin-left: 5%;
-}
-
 .whitelinks:link{
     text-decoration: none;
+    font-size: 25px;
     color: white;
 }
 .whitelinks:visited{
     text-decoration: none;
     color: white;
 }
-
 .whitelinks:hover {
     color: red;
     text-decoration: underline;
     text-decoration-color: white;
 }
-
 .whitelinks:active {
     color: red;
 }
-
 .blacklinks:link{
     text-decoration: none;
     color: black;
@@ -247,6 +261,11 @@ nav {
     color: red;
 }
 
+/* hide the bottom navigation at all other sizes except below 600px */
+.right-burger{
+    display: none;
+}
+
 @media screen and (min-width: 940px) and (max-width:1200px) {
     .right-nav {
         width: 40%;
@@ -257,7 +276,6 @@ nav {
     }
     h1 {
         width: 80%;
-        font-size: 4em;
     }
     #profile-appear {
         width: 25vw;
@@ -279,9 +297,11 @@ nav {
     .right-burger{
         display: none;
     }
+    .whitelinks:link {
+        font-size: 20px;
+    }
     h1 {
         width: 80%;
-        font-size: 4em;
     }
     #profile-appear {
         width: 35vw;
@@ -302,6 +322,16 @@ nav {
     .bottom {
         padding: 15px;
     }
+    .about {
+        flex-direction: column;
+    }
+    .about > div:nth-child(2){
+        width: 80%;
+    }
+    #icons-appear {
+        width: 90%;
+    }
+    
 }
 @media screen and (min-width: 600px) and (max-width:799px) {
     .right-nav {
@@ -313,13 +343,18 @@ nav {
     .right-burger{
         display: none;
     }
+    .whitelinks:link {
+        font-size: 20px;
+    }
     .about {
-        width: 80%
-        /* padding-left: */
+        flex-direction: column;
+    }
+    .about > div:nth-child(2){
+        width: 80%;
     }
     h1 {
         width: 80%;
-        font-size: 3.5em;
+        font-size: 2em;
     }
     #profile-appear{
         width: 35vw;
@@ -340,6 +375,10 @@ nav {
     }
     .bottom {
         padding: 15px;
+    }
+
+    #icons-appear {
+        width: 90%;
     }
 }
 
@@ -372,7 +411,7 @@ nav {
        display: block;
        width: 100%;
        text-align: center;
-       font-family: 'Cinzel', serif;
+       font-family: 'Baloo Da 2', cursive;
        font-size: 1.25em;
        padding-top: 10px;
        padding-bottom: 10px;
@@ -393,7 +432,7 @@ nav {
    }
    h1 {
        width: 100%;
-       font-size: 3em;
+       font-size: 2em;
     }
     .skills {
         font-size: 2.5em;
@@ -405,14 +444,11 @@ nav {
         line-height: 1;
     }
     /* Adjusted the about div to match the spaces symetrically with its parent div */
-    .about {
+    /* .about {
         width: 60%;
-    }
+    } */
     /* Adjust the div containing the about div so that the about div won't go out of boundary of the 
     container div */
-    #wrapper {
-        height: 1000px;
-    }
 
     /* Resize the about me icons */
     .fa-linkedin-square {
@@ -442,5 +478,16 @@ nav {
     }
     #github {
         font-size: 60px;
+    }
+    .about {
+        flex-direction: column;
+        width: 100%;
+    }
+    .about > div:nth-child(2){
+        width: 80%;
+    }
+
+    #icons-appear {
+        width: 100%;
     }
 }

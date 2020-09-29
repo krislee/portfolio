@@ -85,7 +85,7 @@ const create  = (array) => {
         $divVideo.append($video.append($source))
         
         const $div2 = $("<div>").addClass("paraContainer")
-        $div2.append($("<h1>").addClass("projectheading").text(eachArrayElement.title))
+        $divVideo.append($("<h1>").addClass("projectheading").text(eachArrayElement.title))
         $div2.append($("<p>").addClass("para").text(eachArrayElement.description))
 
         const $a = $("<a>").attr({target: "_blank", href: eachArrayElement.url}).append($("<i>").addClass("fa fa-github"))
@@ -93,9 +93,8 @@ const create  = (array) => {
        
         $div.append($divVideo)
         $div.append($div2)
-        $div.append($("<div>").addClass("icons").append($a).append($button))
+        $div2.append($("<div>").addClass("icons").append($a).append($button))
         $(".flex").append($div)
     
     })
 }
-

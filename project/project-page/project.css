@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&family=Cinzel&display=swap');
 
 /* Navigation bar */
+/* Navigation bar */
+
 body {
-    margin:0px;
+    margin: 0px !important;
+    padding: 0px !important;
 }
+
 nav {
     width: 100%;
     display: flex;
@@ -12,9 +16,9 @@ nav {
     color: white;
     height: 100px;
     align-items: center;
-    font-family: 'Cinzel', serif;
+    font-family: 'Baloo Da 2', cursive;
     border-bottom: 3px solid white;
-    margin:0;
+    /* position: fixed; */
 }
 .hp-icon {
     width: 105px;
@@ -22,37 +26,30 @@ nav {
 .icondiv {
     margin-left: 5%;
 }
+
 .right-nav {
     display: flex;
     margin-right: 50px;
     width: 30%;
     justify-content: space-around;
 }
-/* hide the bottom navigation at all other sizes except below 600px */
-.right-burger{
-    display: none;
-}
-
 .whitelinks:link{
     text-decoration: none;
+    font-size: 25px;
     color: white;
 }
 .whitelinks:visited{
     text-decoration: none;
     color: white;
 }
-
 .whitelinks:hover {
     color: red;
     text-decoration: underline;
     text-decoration-color: white;
 }
-
 .whitelinks:active {
     color: red;
 }
-
-/* Hamburger Menu Drop Down */
 .blacklinks:link{
     text-decoration: none;
     color: black;
@@ -70,35 +67,36 @@ nav {
     color: red;
 }
 
-
-/* VIDEO */
-main {
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 100%;
-    margin: 0 auto;
+/* hide the bottom navigation at all other sizes except below 600px */
+.right-burger{
+    display: none;
 }
+
+.title {
+    font-size: 3em;
+    margin-bottom: 20px !important;
+}
+
+main {
+    width: 100%;
+}
+
 .flex {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: auto;
+    align-items: center;
 }
 
-.video {
-    width: 75%;
-    margin-top: 30px;
-    border: 2px solid black;
-    box-shadow: -15px -10px 8px grey;
-}
 .container {
     width: 50%;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
+    margin-top: 50px;
+    height: 600px;
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
-    text-align: center;
+    flex-direction: column;
     opacity: 0;
 }
 
@@ -107,45 +105,43 @@ main {
     opacity: 1;
 }
 
+.video {
+    width: 90%;
+    height: 100%;
+    /* border: 1px solid black;  */
+}
+
 .videoDiv {
-    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50%;
 }
 
 .paraContainer {
-    padding-top: 100px;
-    width: 100%;
-    margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    height: 40%;
 }
 
 .para {
-    width: 90%;
-    margin: 0 auto;
     font-family: 'Baloo Da 2', cursive;
-    height: 100px;
-    text-align: left;
+    padding-left: 40px;
+    padding-right: 40px;
 }
+
 h1 {
     text-align: center;
     font-family: 'Baloo Da 2', cursive;
 }
 
-.title {
-    height: 100px;
-    font-size: 4em;
-    color: white;
-    background-color: #111422;
-    margin-top:0px;
-}
-
 /* Github Icon */
 .icons {
     width: 100%;
-    margin: 0;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -162,7 +158,7 @@ h1 {
     display: flex;
     align-items: baseline;
     font-family: 'Baloo Da 2', cursive;
-    font-size: 25px;
+    font-size: 16px;
 }
 
 .launch > a:link{
@@ -216,12 +212,16 @@ h1 {
 
 .fa-github {
     font-size: 86px;
-    color: white;
+    color: black;
 }
 
 .copyright {
     font-family: 'Baloo Da 2', cursive;
     text-align:center;
+}
+
+.bottom > a > .fa-github {
+    color: white;
 }
 
 
@@ -236,6 +236,10 @@ h1 {
     .icondiv {
         margin-left: 4%;
     }
+
+    .launch{
+        font-size: 16px;
+    }
 }
 
 @media screen and (min-width: 800px) and (max-width:939px) {
@@ -246,6 +250,9 @@ h1 {
     .right-burger{
         display: none;
     }
+    .whitelinks:link {
+        font-size: 20px;
+    }
     .icondiv {
         margin-left: 4%;
     }
@@ -259,8 +266,9 @@ h1 {
         padding: 15px;
     }
     .launch{
-        font-size: 20px;
+        font-size: 16px;
     }
+
 }
 
 @media screen and (min-width: 600px) and (max-width:799px) {
@@ -271,6 +279,9 @@ h1 {
     .right-burger{
         display: none;
     }
+    .whitelinks:link {
+        font-size: 20px;
+    }
     .icondiv {
         margin-left: 4%;
     }
@@ -284,7 +295,17 @@ h1 {
         padding: 15px;
     }
     .launch{
-        font-size: 15px;
+        font-size: 16px;
+    }
+    .container {
+        width: 100%;
+    }
+    .video {
+        height: 80%;
+    }
+    .paraContainer {
+        justify-content: center;
+        height: 40%;
     }
 }
 
@@ -317,7 +338,7 @@ h1 {
        display: block;
        width: 100%;
        text-align: center;
-       font-family: 'Cinzel', serif;
+       font-family: 'Baloo Da 2', cursive;
        font-size: 1.25em;
        padding-top: 10px;
        padding-bottom: 10px;
@@ -330,9 +351,7 @@ h1 {
     .icondiv {
         margin-left: 10%;
     }
-    .para {
-        height: 50px;
-    }
+
     .bottom {
         padding: 10px;
         margin-top:50px;
@@ -346,167 +365,61 @@ h1 {
         font-size: 60px;
     }
     .launch{
-        font-size: 15px;
-    }
-}
-
-
-@media screen and (max-width:1350px) {
-    .videoDiv{
-        height:400px;
-    }
-    .paraContainer {
-        padding-top:75px;
-    }
-    .projectheading{
-        margin-top:0px;
-    }
-}
-
-@media screen and (max-width:1150px) {
-    .videoDiv{
-        height:400px;
-    }
-    .paraContainer {
-        padding-top:20px;
-    }
-    .projectheading{
-        margin-top:0px;
-    }
-}
-
-@media screen and (max-width:1050px) {
-    .videoDiv{
-        height:375px;
-    }
-    .paraContainer {
-        padding-top:10px;
-    }
-    .projectheading{
-        margin-top:0px;
-    }
-}
-
-@media screen and (max-width:950px) {
-    .videoDiv{
-        height:375px;
-    }
-    .paraContainer {
-        padding-top:0px;
-    }
-    .projectheading{
-        margin-top:-20px;
-    }
-}
-
-@media screen and (max-width:850px) {
-    .videoDiv{
-        height:375px;
-    }
-    .paraContainer {
-        padding-top:0px;
-    }
-    .projectheading{
-        margin-top:-50px;
-    }
-}
-
-/* @media screen and (max-width:750px) {
-    .videoDiv{
-        height:375px;
-    }
-    .paraContainer {
-        padding-top:0px;
-    }
-    .projectheading{
-        margin-top:-70px;
-    }
-} */
-
-@media screen and (max-width:749px) {
-    .videoDiv{
-        height: 375px;
-    }
-    .paraContainer {
-        padding-top: 200px;
-    }
-    .projectheading{
-        margin-top:-70px;
-    }
-    .icons {
-        margin-bottom: 40px;
-    }
-    .flex{
-        flex-direction: column;
+        font-size: 16px;
     }
     .container {
         width: 100%;
     }
-    .flex > div:nth-child(2), .flex > div:nth-child(4) {
+
+}
+
+@media only screen and (max-width: 799px) {
+
+    .title {
+        margin-bottom: 30px !important;
+    }
+
+    .video {
+        height: 70%;
+    }
+
+    .para {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    .projectheading {
+        margin-bottom: 0px !important;
+    }
+
+    .paraContainer {
+        height: 30%;
+        justify-content: space-around;
+    }
+    
+    .container {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .flex > div:nth-child(even) {
         background-color: #111422;
         color: white;
     }
-    .flex > div:nth-child(2) >.videoDiv > .video, .flex > div:nth-child(4) >.videoDiv > .video {
-        border: 3px solid #cccccc;
-    }
+
     .flex > div:nth-child(2) >.videoDiv > .video, .flex > div:nth-child(4) >.videoDiv > .video {
         box-shadow: 0px 0px 0px grey;
     }
 
-    .flex > div:nth-child(even) > .icons > a > .fa-github{
+    .flex > div:nth-child(even) > .paraContainer > .icons > a > .fa-github{
         color: white;
+
     }
 }
 
-@media screen and (max-width: 650px) {
-    .videoDiv{
-        height: 375px;
-    }
-    .paraContainer {
-        padding-top: 150px;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    .videoDiv{
-        height: 375px;
-    }
-    .paraContainer {
-        padding-top: 100px;
-    }
-    .flex > div:nth-child(3) > .icons {
-        margin-top: 50px;
-    }
-    .flex > div:nth-child(5) > .icons {
-        margin-top: 50px;
-    }
-    .flex > div:nth-child(2) > .icons {
-        margin-top: 40px;
-    }
-    .flex > div:nth-child(3) > .icons {
-        margin-top: 40px;
-    }
-    .flex > div:nth-child(5) > .icons {
-        margin-top: 40px;
-    }
-}
-@media screen and (max-width: 450px) {
-    .videoDiv{
-        height: 375px;
-    }
-    .paraContainer {
-        padding-top: 0px;
-    } 
-    .flex > div:nth-child(odd) > .paraContainer >p {
-        height: 75px;
-    }
-    .paraContainer > p:nth-child(even) {
-        height: 125px;
-    }
-    .flex > div:nth-child(3) > .icons {
-        margin-top: 50px;
-    }
-    .flex > div:nth-child(5) > .icons {
-        margin-top: 50px;
+@media only screen and (max-width:550px) {
+    .para {
+        padding-left:40px;
+        padding-right:40px;
     }
 }

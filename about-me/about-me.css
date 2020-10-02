@@ -123,6 +123,7 @@ h1 {
     text-align: center;
     text-decoration: none;
     border-radius: 20px;
+    margin-right: 40px;
 }
 .fa-github {
     font-size: 50px;
@@ -133,6 +134,19 @@ h1 {
     color: #22759A;
     font-size: 50px;
     margin-right: 40px;
+}
+
+.social-icons > a:nth-child(4) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    cursor: pointer;
+}
+
+.resume {
+    height: 42.86px;
+    width: 50px;
 }
 .fa:hover {
     opacity: 0.7;

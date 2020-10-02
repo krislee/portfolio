@@ -73,11 +73,9 @@ To create the DOM, the function called create will loop through the objects insi
 
 The div with class flex has a display flex and flex-wrapped since more projects will be added in the near future. A grid display would have made the layout fixed, making it difficult for additional projects to be added. Each container class div inside the flex div is horizontally centered using center justify-content. The contents inside container class div are centered and displayed in a column by making the div a flexbox. The width is 50% so that 2 divs will fit (this will change under 600px).
 
-The direct parent of video is a div and will have its height be adjusted each time so that the video size will also be adjusted. The container containing the title and description will have padding-top differ in each respons. In desktop view, the title is covered by the video so a padding-top of 100px is added. As the window is minimized, the video is minimized so it doesn't cover the title as much so the padding-top is also decreased between the video and the text.
+Two divs were created, one was for the video and the title and another for the buttons and description below. As the window is minimized, display flex will adjust accordingly so that the divs will not overlap. The container holding the project information is also flex-start so that it begins at the top instead of elsewhere.
 
-Below 550px, each of the icons div containing the button and GitHub icon position do not spaced the same way, so a margin-top is added to certain ivon divs to match with the other divs. 
-
-Below 749px, background color, border, and box-shadow is added to the second and forth container class divs, and the layout for the flex class div is changed to a column. 
+Below 799px, background color, border, and box-shadow is added to the second and forth container class divs, and the layout for the flex class div is changed to a column. 
 
 ## Opacity change upon scrolling
 

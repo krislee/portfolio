@@ -41,12 +41,12 @@ body {
 }
 
 #profile-appear {
-    width: 25vw;
+    width: 30vw;
     height: 25vw;
     display: block;
     margin: auto;
     border-radius: 100%;
-    border: 3px solid black;
+    /* border: 3px solid black; */
 }
 
 .about > div:nth-child(1) {
@@ -292,7 +292,7 @@ nav {
         width: 80%;
     }
     #profile-appear {
-        width: 25vw;
+        width: 30vw;
         height: 25vw;
     }
     p {
@@ -318,7 +318,7 @@ nav {
         width: 80%;
     }
     #profile-appear {
-        width: 35vw;
+        width: 40vw;
         height: 35vw;
     }
     p {
@@ -371,7 +371,7 @@ nav {
         font-size: 2em;
     }
     #profile-appear{
-        width: 35vw;
+        width: 40vw;
         height: 35vw;
     }
     p {
@@ -441,7 +441,7 @@ nav {
 
    /* Sizing the image of myself and headings in the about me and skills */
    #profile-appear{
-       width: 40vw;
+       width: 45vw;
        height: 40vw;
    }
    h1 {

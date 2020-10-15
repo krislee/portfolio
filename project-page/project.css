@@ -72,10 +72,18 @@ nav {
 }
 
 .title {
-    font-size: 3.5em;
+    font-size: 4em;
     margin-bottom: 20px !important;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.titleDiv {
+    background-color: black;
+    color: white;
+}
 main {
     width: 100%;
 }
@@ -379,9 +387,9 @@ h1 {
     }
 
     .titleDiv {
-        height: 100px;
+        height: 150px;
     }
-    
+
     .video {
         height: 70%;
     }
@@ -405,7 +413,7 @@ h1 {
         margin-bottom: 0px;
     }
 
-    .flex > div:nth-child(odd) {
+    .flex > div:nth-child(even) {
         background-color: #111422;
         color: white;
     }
@@ -414,9 +422,15 @@ h1 {
         box-shadow: 0px 0px 0px grey;
     }
 
-    .flex > div:nth-child(odd) > .paraContainer > .icons > a > .fa-github{
+    .flex > div:nth-child(even) > .paraContainer > .icons > a > .fa-github{
         color: white;
 
+    }
+}
+
+@media only screen and (max-width:599px) {
+    .titleDiv {
+        height: 100px;
     }
 }
 

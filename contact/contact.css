@@ -167,6 +167,10 @@ button > span {
     height: 100%;
 }
 
+.pageclip-form__success {
+    width: 100%;
+}
+
 /* Footer */
 .bottom {
     border-top: 2px solid black;

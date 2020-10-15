@@ -144,6 +144,10 @@ textarea {
     resize: none;
 }
 
+input:focus {
+    outline: none !important;
+}
+
 .pageclip-form__submit {
     height: 60px;
     width: 15%;

@@ -36,9 +36,27 @@
 
 
     <div class="header"><h1>Contact Me</h1></div>
-    <div class="contacts">
+    <!-- <div class="contacts">
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdQ3SWDu-K7DuFcDHgVGZXnXmUf-E3lq1qxsk61ulvLvwpDfQ/viewform?embedded=true" width="640" height="709" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    </div>
+    </div> -->
+    <form
+        action="https://formspree.io/f/xdopewka"
+        method="POST"
+    >
+        <label>
+            Name:
+            <input type="text" name="name">
+        </label>
+        <label>
+            Email:
+            <input type="text" name="email">
+        </label>
+        <label>
+            Message:
+            <textarea name="message"></textarea>
+        </label>
+        <button type="submit">Send</button>
+    </form>
 
     <footer>
         <div class="bottom" >

@@ -12,11 +12,6 @@ $(window).resize (function(e) {
    }
 })
 
-$(window).on('load', () => {
-    $('.short-blurb').addClass('short-blurb-effect')
-    $('.profile-pic').addClass('profile-pic-effect')
-})
-
 $('.preview1').hover(() => {
     $('.library').toggleClass('text-glow')
     $('.glow1').toggleClass('button-glow')
@@ -26,3 +21,24 @@ $('.preview2').hover(() => {
     $('.rps').toggleClass('text-glow')
     $('.glow2').toggleClass('button-glow')
 })
+
+const slideUp = () => {
+    let options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0
+    }
+    let bodyWidth = document.querySelector('body').offsetWidth
+
+    let observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+            if(entry.isIntersecting) {
+                document.querySelector('.hpflex').setAttribute('id','slide-up')
+                // document.querySelector('.profile').setAttribute('id', 'profile-appear')
+            } 
+        })
+    }, options)
+    let about = document.querySelector('.hpflex')
+    observer.observe(about)
+}
+slideUp()

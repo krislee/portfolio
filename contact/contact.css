@@ -167,7 +167,7 @@ button > span {
     height: 100%;
 }
 
-.pageclip-form__success {
+.pageclip-form > .pageclip-form__success {
     width: 100%;
 }
 

@@ -33,12 +33,12 @@ const slideUp = () => {
     let observer = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry) => {
             if(entry.isIntersecting) {
-                document.querySelector('.hpflex').setAttribute('id','slide-up')
-                // document.querySelector('.profile').setAttribute('id', 'profile-appear')
+                document.querySelector('.profile-pic').setAttribute('id','profile-pic-effect')
+                document.querySelector('.short-blurb').setAttribute('id', 'short-blurb-effect')
             } 
         })
     }, options)
-    let about = document.querySelector('.hpflex')
+    let about = document.querySelector('.hp-flex')
     observer.observe(about)
 }
 slideUp()

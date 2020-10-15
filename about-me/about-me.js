@@ -19,13 +19,7 @@ const slideUp = () => {
         threshold: 0
     }
     let bodyWidth = document.querySelector('body').offsetWidth
-    // if (bodyWidth< 600 && bodyWidth>500){
-    //     options.threshold = 0.1
-    // } else if (bodyWidth <=500 && bodyWidth >400) {
-    //     options.threshold = 0.2
-    // } else if (bodyWidth <500 && bodyWidth >400) {
-    //     options.threshold = 0.3
-    // }
+
     let observer = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry) => {
             if(entry.isIntersecting) {

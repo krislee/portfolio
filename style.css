@@ -71,12 +71,6 @@ nav {
 }
 
 /* Preview About Me */
-#slide-up {
-    transform: translate(0px,0px);
-    transition: all 1s ease-in-out;
-    background-color: rgba(255, 255, 255, 0.708);
-    opacity: 1;
-}
 .hp-flex {
     background-color: #111422;
     color: white;
@@ -88,16 +82,17 @@ nav {
 }
 .profile-pic {
     width: 30%;
+    /* height: 100px; */
     border-radius: 100%;
     border: 3px solid white;
     opacity: 0;
     transition: all 2s ease-in-out;
     transform: translate(0px, 300px);
 }
-/* .profile-pic-effect {
+#profile-pic-effect {
     opacity:1;
     transform: translate(0px, 0px);
-} */
+}
 .short-blurb {
     display: flex;
     flex-direction: column;
@@ -109,7 +104,7 @@ nav {
     transition: transform 2.5s ease-in-out;
     transform: translate(0px, 300px);
 }
-.short-blurb-effect {
+#short-blurb-effect {
     opacity:1;
     transform: translate(0px, 0px);
 }

@@ -4,9 +4,16 @@
 } */
 body {
     margin: auto;
+    font-family: 'Baloo Da 2', cursive;
 }
 
 /* Navigation bar */
+
+body {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
 nav {
     width: 100%;
     display: flex;
@@ -15,8 +22,9 @@ nav {
     color: white;
     height: 100px;
     align-items: center;
-    font-family: 'Cinzel', serif;
+    font-family: 'Baloo Da 2', cursive;
     border-bottom: 3px solid white;
+    /* position: fixed; */
 }
 .hp-icon {
     width: 105px;
@@ -24,36 +32,30 @@ nav {
 .icondiv {
     margin-left: 5%;
 }
+
 .right-nav {
     display: flex;
     margin-right: 50px;
     width: 30%;
     justify-content: space-around;
 }
-
-.right-burger{
-    display: none;
-}
-
 .whitelinks:link{
     text-decoration: none;
+    font-size: 25px;
     color: white;
 }
 .whitelinks:visited{
     text-decoration: none;
     color: white;
 }
-
 .whitelinks:hover {
     color: red;
     text-decoration: underline;
     text-decoration-color: white;
 }
-
 .whitelinks:active {
     color: red;
 }
-
 .blacklinks:link{
     text-decoration: none;
     color: black;
@@ -71,22 +73,19 @@ nav {
     color: red;
 }
 
+/* hide the bottom navigation at all other sizes except below 600px */
+.right-burger{
+    display: none;
+}
+
 .contacts{
     width: 100%;
     text-align: center;
-    height: 600px;
-}
-
-iframe{
-    width: 90%;
-    position: absolute;
-    top: 600px;
-    /* left: 50%; */
-    transform: translate(-50%, -50%);
+    /* height: 600px; */
 }
 
 .header {
-    height: 300px;
+    height: 150px;
     background-color: black;
     color: white;
     text-align: center;
@@ -100,12 +99,74 @@ h1 {
     font-family: 'Baloo Da 2', cursive;
 }
 
+/* Form */
+
+.pageclip-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    height: 100%;
+}
+
+input {
+    /* display: flex;
+    justify-content: left; */
+    height: 25px;
+    width: 70%;
+    border: none;
+    border-bottom: 1.5px solid black;
+}
+
+.pageclip-form > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 10px;
+}
+
+.pageclip-form > div > label {
+    display: flex;
+    justify-content: left;
+    width: 70%;
+}
+
+.pageclip-form > div > div {
+    width: 70%;
+}
+
+textarea {
+    height: 100px;
+    width: 70%;
+    resize: none;
+}
+
+.pageclip-form__submit {
+    height: 60px;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button > span {
+    font-family: 'Baloo Da 2', cursive;
+    display: flex;
+    font-size: 1.5em;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 /* Footer */
 .bottom {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     padding: 20px;
-    margin-top: 80px;
+    margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
@@ -158,6 +219,9 @@ h1 {
     .right-burger{
         display: none;
     }
+    .whitelinks:link {
+        font-size: 20px;
+    }
     .icondiv {
         margin-left: 4%;
     }
@@ -180,9 +244,23 @@ h1 {
     .right-burger{
         display: none;
     }
+    .whitelinks:link {
+        font-size: 20px;
+    }
     .icondiv {
         margin-left: 4%;
     }
+    /* Form */
+    input, textarea, .pageclip-form > div > label {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .pageclip-form__submit {
+        width: 20%;
+        height: 50px;
+    }
+    /* Footer */
     .fa-linkedin-square {
         font-size: 60px;
     }
@@ -192,59 +270,96 @@ h1 {
     .bottom {
         padding: 15px;
     }
+
 }
 
 @media screen and (max-width:599px) {
-   .burger::before {
-       content:'\2630';
-       font-size: 50px;
-       color: white;
-       float: right;
-   }
-   .xcross::before {
-    content:'\2715';
-    font-size: 50px;
-    color: white;
-    float: right;
+   
+    .burger::before {
+        content:'\2630';
+        font-size: 50px;
+        color: white;
+        float: right;
+    }
+    .xcross::before {
+        content:'\2715';
+        font-size: 50px;
+        color: white;
+        float: right;
+    }
+    .right-nav {
+        margin-right: 0;
+    }
+    /* To hide the original top navigation at width less than 599px */
+    .hidden{
+        display: none;
+    }
+    /* The bottom navigation will be remain hidden until .show class is 
+    added to .right-burger through jQuery */
+    .right-burger {
+        display:none;
+    }
+    .show {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-family: 'Baloo Da 2', cursive;
+        font-size: 1.25em;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: rgba(255, 255, 255, 0.708);
+    }
+    .icondiv {
+        margin-left: 10%;
+    }
+    .bottom-nav-about, .bottom-nav-project {
+         padding-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 3.5em;
+        padding-top: 0px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header {
+        height: 100px;
+    }
+
+    /* Form */
+    input, textarea, .pageclip-form > div > label {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .pageclip-form__submit {
+        width: 20%;
+        height: 50px;
+    }
+    .pageclip-form > div {
+        width: 70%;
+    }
+
+    /* Footer */
+    .bottom {
+        padding: 10px;
+        margin-top:50px;
+    }
+    .fa-linkedin-square {
+        font-size: 55px;
+        width: 55px;
+        border-radius: 20px;
+    }
+    .fa-github {
+        font-size: 60px;
+    }
 }
-   .right-nav {
-       margin-right: 0;
-   }
-   /* To hide the original top navigation at width less than 599px */
-   .hidden{
-       display: none;
-   }
-   /* The bottom navigation will be remain hidden until .show class is 
-   added to .right-burger through jQuery */
-   .right-burger {
-       display:none;
-   }
-   .show {
-       display: block;
-       width: 100%;
-       text-align: center;
-       font-family: 'Cinzel', serif;
-       font-size: 1.25em;
-       padding-top: 10px;
-       padding-bottom: 10px;
-       background-color: rgba(255, 255, 255, 0.708);
-   }
-   .bottom-nav-about, .bottom-nav-project {
-        padding-bottom: 15px;
-   }
-   .icondiv {
-    margin-left: 10%;
-}
-.bottom {
-    padding: 10px;
-    margin-top:50px;
-}
-.fa-linkedin-square {
-    font-size: 55px;
-    width: 55px;
-    border-radius: 20px;
-}
-.fa-github {
-    font-size: 60px;
-}
+
+@media screen and (max-width:400px) {
+    h1 {
+        font-size: 3em;
+    }
 }

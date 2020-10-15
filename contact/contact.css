@@ -95,7 +95,11 @@ nav {
 h1 {
     margin:0px;
     font-size: 4em;
-    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* padding-top: 30px; */
     font-family: 'Baloo Da 2', cursive;
 }
 

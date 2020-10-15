@@ -110,15 +110,6 @@ h1 {
     height: 100%;
 }
 
-input {
-    /* display: flex;
-    justify-content: left; */
-    height: 25px;
-    width: 70%;
-    border: none;
-    border-bottom: 1.5px solid black;
-}
-
 .pageclip-form > div {
     display: flex;
     justify-content: center;
@@ -134,6 +125,20 @@ input {
     width: 70%;
 }
 
+input {
+    /* display: flex;
+    justify-content: left; */
+    height: 25px;
+    width: 70%;
+    border: none;
+    border-bottom: 1.5px solid black;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+input:focus {
+    outline: none !important;
+}
+
 .pageclip-form > div > div {
     width: 70%;
 }
@@ -142,10 +147,7 @@ textarea {
     height: 100px;
     width: 70%;
     resize: none;
-}
-
-input:focus {
-    outline: none !important;
+    font-family: 'Baloo Da 2', cursive;
 }
 
 .pageclip-form__submit {

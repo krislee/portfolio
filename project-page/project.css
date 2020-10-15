@@ -375,9 +375,13 @@ h1 {
 @media only screen and (max-width: 799px) {
 
     .title {
-        margin-bottom: 30px !important;
+        margin-top: 0px;
     }
 
+    .titleDiv {
+        height: 100px;
+    }
+    
     .video {
         height: 70%;
     }

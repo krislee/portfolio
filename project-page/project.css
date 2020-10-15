@@ -79,12 +79,12 @@ nav {
     justify-content: center;
     align-items: center;
     margin-block-start: 0em !important;
-    height: 150px;
 }
 
 .titleDiv {
     background-color: black;
     color: white;
+    height: 150px;
 }
 main {
     width: 100%;

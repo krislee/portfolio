@@ -37,6 +37,7 @@ fetch(url)
     let projectDiv6 = document.querySelectorAll('.container')[5]
     let projectDiv7 = document.querySelectorAll('.container')[6]
     let projectDiv8 = document.querySelectorAll('.container')[7]
+    let projectDiv9 = document.querySelectorAll('.container')[8]
 
     let a = opacityChange(0)
     let b = opacityChange(1)
@@ -46,6 +47,7 @@ fetch(url)
     let f = opacityChange(5)
     let g = opacityChange(6)
     let h = opacityChange(7)
+    let i = opacityChange(8)
 
     a.observe(projectDiv1)
     b.observe(projectDiv2) 
@@ -55,7 +57,7 @@ fetch(url)
     f.observe(projectDiv6)
     g.observe(projectDiv7)
     h.observe(projectDiv8)
-
+    i.observe(projectDiv9)
 })
 
 // IntersectionObserver is introduced to me by my peer, Kwok Ren
